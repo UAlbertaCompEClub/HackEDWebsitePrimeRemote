@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Grid, Image } from 'semantic-ui-react'
+import HackEDLogo from './HackEDLogo.svg';
+import About from './Components/About'
+import WhereToGo from './Components/WhereToGo'
+import Faq from './Components/Faq'
+import Footer from './Components/Footer'
+import Sponsors from './Components/Sponsors'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Grid 
+          verticalAlign='top'
+          centered 
+          style={{height: '100vh', background: "linear-gradient(180deg, #FFFFFF 70%, #d02120 90%)"}}>
+          <Grid.Row>
+            <Grid.Column width={12} textAlign='center' style={{paddingTop: "20vh"}}>
+              <Image src={HackEDLogo} fluid />
+              <h2>Alberta Largest Student Run Hackathon</h2>
+              <h3>January 19 - 20 @ The Donadeo Innovation Centre for Engineering</h3>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        <About/>
+        <WhereToGo/>
+        <Faq/>
+        <Sponsors/>
+        <Footer/>
       </div>
     );
   }
