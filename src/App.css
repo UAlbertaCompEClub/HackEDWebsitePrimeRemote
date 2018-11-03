@@ -1,3 +1,8 @@
+.ui.hackedred.button {
+  background-color: #d02120;
+  color: #fff;
+}
+
 .ui.grid {
   margin: 0rem;
 }
