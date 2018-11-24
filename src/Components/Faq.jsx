@@ -93,7 +93,7 @@ const generalPanels = [
         key: 'whats-the-best-group',
         title: 'What’s the best group size?',
         content: [
-            'You can have any size group you want, but we recommend 4 hackers.'
+            'You can have a max group size of 5, but we recommend 4 hackers.'
         ].join(' '),
       },
   ]
@@ -112,7 +112,7 @@ const generalPanels = [
     {
         key: 'who-can-apply',
         title: 'Who can apply?',
-        content: 'Any student, new grad, and graduate students.',
+        content: 'Any student, new grads of up to 1 year, and graduate students.',
       },
       {
         key: 'are-there-any-fees',
@@ -165,7 +165,7 @@ const generalPanels = [
       key: 'can-i-volunteer',
       title: 'Can I volunteer instead?',
       content: [
-            'Of course! All help will be throughly appreciated. Reach out to us at at hacked@compeclub.com'
+            'Of course! All help will be throughly appreciated. Reach out to us at at hacked@compeclub.com or fill out this form https://docs.google.com/forms/d/e/1FAIpQLScLH936Ut2-lLYn7iGQkLk4tGyq8iKvezEddD3D8l_QDSLGdw/viewform'
         ].join(' '),
     },
     {
