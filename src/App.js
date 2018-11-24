@@ -25,7 +25,7 @@ class App extends Component {
           <Grid.Row>
             <Grid.Column width={12} textAlign='center' style={{paddingTop: "15vh"}}>
               <Image src={HackEDLogo} fluid />
-              <h2>Alberta Largest Student Run Hackathon</h2>
+              <h2>Alberta's Largest Student Run Hackathon</h2>
               <h3>January 19 - 20 @ The Donadeo Innovation Centre for Engineering</h3>
               <Button onClick={this.redirectToInterestForm} color='hackedred' size='huge'>Get notified when applications open!</Button>
             </Grid.Column>
