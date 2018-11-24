@@ -1,17 +1,17 @@
 {
   "main.css": "/static/css/main.a64dbf59.chunk.css",
-  "main.js": "/static/js/main.cf8908ae.chunk.js",
-  "main.js.map": "/static/js/main.cf8908ae.chunk.js.map",
+  "main.js": "/static/js/main.ac49dd33.chunk.js",
+  "main.js.map": "/static/js/main.ac49dd33.chunk.js.map",
   "static/css/1.bc691891.chunk.css": "/static/css/1.bc691891.chunk.css",
   "static/js/1.df87029a.chunk.js": "/static/js/1.df87029a.chunk.js",
   "static/js/1.df87029a.chunk.js.map": "/static/js/1.df87029a.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/semantic.min.css": "/static/media/brand-icons.a1a749e8.svg",
+  "static/media/semantic.min.css": "/static/media/flags.9c74e172.png",
   "static/media/HackEDLogo.svg": "/static/media/HackEDLogo.d54e7768.svg",
   "static/css/main.a64dbf59.chunk.css.map": "/static/css/main.a64dbf59.chunk.css.map",
   "static/css/1.bc691891.chunk.css.map": "/static/css/1.bc691891.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.92ba5df6dbf2d245f02c207f68327787.js": "/precache-manifest.92ba5df6dbf2d245f02c207f68327787.js",
+  "precache-manifest.79739a456a7a52fa6922644cccdc13ef.js": "/precache-manifest.79739a456a7a52fa6922644cccdc13ef.js",
   "service-worker.js": "/service-worker.js"
 }
