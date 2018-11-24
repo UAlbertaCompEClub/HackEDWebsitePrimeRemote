@@ -102,7 +102,7 @@ const generalPanels = [
     {
       key: 'where-do-i-apply',
       title: 'Where do I apply?',
-      content: 'Applications will open soon!'
+      content: 'HERE!! https://www.eventbrite.ca/e/hacked-2019-tickets-52785383503'
     },
     {
       key: 'when-is-the-deadline',
