@@ -26,7 +26,7 @@ class About extends Component {
                 </Container>
                 <Container>
                     <h2>BRING IT</h2>
-                    <p>Join us over the weekend of January 27 to hack your way to something new, whether you’re learning to code for the first time or flexing your hacking muscle trying to build the next big thing. Bring on the challenge, bring your ideas to life.</p>
+                    <p>Join us over the weekend of January 19 to hack your way to something new, whether you’re learning to code for the first time or flexing your hacking muscle trying to build the next big thing. Bring on the challenge, bring your ideas to life.</p>
                     <br/>
                 </Container>
             </div>
