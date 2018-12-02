@@ -8,7 +8,7 @@ class About extends Component {
 
     render() {
         return (
-            <div className="about">
+            <div id ="about" className="about">
                 <Container>
                     <h1 style={{textAlign: 'center'}}>BRING IT!</h1>
                     <h3>Hackathons are for designing, creating, and building awesome projects. HackED is the premiere annual 24-hour hackathon from the Computer Engineering Club of the University of Alberta.</h3>

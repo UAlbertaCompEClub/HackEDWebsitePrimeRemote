@@ -192,7 +192,7 @@ class Faq extends Component {
 
     render() {
         return (
-            <Grid style={{
+            <Grid id="FAQ" style={{
                 background: "#d02120",
                 margin: 0,
                 paddingBottom: 40,

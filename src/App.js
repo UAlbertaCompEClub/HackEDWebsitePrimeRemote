@@ -6,6 +6,7 @@ import WhereToGo from './Components/WhereToGo'
 import Faq from './Components/Faq'
 import Footer from './Components/Footer'
 import Sponsors from './Components/Sponsors'
+import Header from './Components/NavigationBar'
 import './App.css';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header/>
         <Grid 
           verticalAlign='top'
           centered 

@@ -14,7 +14,7 @@ class Sponsors extends Component {
     
     render() {
         return (
-            <Grid 
+            <Grid id="Sponsors"
                 centered
                 style={{
                 background: "#FFFFFF",
