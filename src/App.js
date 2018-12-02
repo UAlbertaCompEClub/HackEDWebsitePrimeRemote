@@ -10,8 +10,7 @@ import './App.css';
 
 class App extends Component {
 
-  redirectToInterestForm = event => {
-    const url = 'https://www.eventbrite.ca/e/hacked-2019-tickets-52785383503';
+  redirectToExternalUrl(url, e) {
     window.open(url, '_blank');
   };
 
@@ -27,7 +26,8 @@ class App extends Component {
               <Image src={HackEDLogo} fluid />
               <h2>Alberta's Largest Student Run Hackathon</h2>
               <h3>January 19 - 20 @ The Donadeo Innovation Centre for Engineering</h3>
-              <Button onClick={this.redirectToInterestForm} color='hackedred' size='huge'>Register Here!</Button>
+              <Button onClick={(e) => this.redirectToExternalUrl('https://www.eventbrite.ca/e/hacked-2019-tickets-52785383503', e)} color='hackedred' size='huge'>Register Here!</Button>
+              <Button onClick={(e) => this.redirectToExternalUrl('https://docs.google.com/forms/d/e/1FAIpQLScLH936Ut2-lLYn7iGQkLk4tGyq8iKvezEddD3D8l_QDSLGdw/viewform', e)} color='hackedred' size='huge'>Volunteer Here!</Button>
             </Grid.Column>
           </Grid.Row>
         </Grid>
