@@ -6,6 +6,7 @@ import IntuitLogo from '../logos/Intuit.png'
 
 import StartupEdmontonLogo from '../logos/StartupEdmonton.png'
 import ServusLogo from '../logos/Servus.jpg'
+import DevFactoLogo from '../logos/DevFacto.png'
 
 import JobberLogo from '../logos/Jobber.jpg'
 
@@ -56,6 +57,14 @@ class Sponsors extends Component {
                             fluid
                             as='a'
                             href='https://www.startupedmonton.com/'
+                            target='_blank'/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Image
+                            src={DevFactoLogo}
+                            fluid
+                            as='a'
+                            href='https://www.devfacto.com/'
                             target='_blank'/>
                     </Grid.Column>
                 </Grid.Row>
