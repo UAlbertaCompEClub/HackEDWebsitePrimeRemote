@@ -9,6 +9,7 @@ import ServusLogo from '../logos/Servus.jpg'
 import DevFactoLogo from '../logos/DevFacto.png'
 
 import JobberLogo from '../logos/Jobber.jpg'
+import ThePodLogo from '../logos/ThePod.png'
 
 class Sponsors extends Component {
     
@@ -76,6 +77,14 @@ class Sponsors extends Component {
                             fluid
                             as='a'
                             href='https://getjobber.com/'
+                            target='_blank'/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Image
+                            src={ThePodLogo}
+                            fluid
+                            as='a'
+                            href='https://www.pod-innovation.ca/'
                             target='_blank'/>
                     </Grid.Column>
                 </Grid.Row>
