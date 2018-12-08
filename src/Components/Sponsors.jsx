@@ -7,6 +7,7 @@ import IntuitLogo from '../logos/Intuit.png'
 import StartupEdmontonLogo from '../logos/StartupEdmonton.png'
 import ServusLogo from '../logos/Servus.jpg'
 import DevFactoLogo from '../logos/DevFacto.png'
+import WillowglenLogo from '../logos/WillowglenSystems.jpg'
 
 import JobberLogo from '../logos/Jobber.jpg'
 import ThePodLogo from '../logos/ThePod.png'
@@ -58,6 +59,14 @@ class Sponsors extends Component {
                             fluid
                             as='a'
                             href='https://www.startupedmonton.com/'
+                            target='_blank'/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Image
+                            src={WillowglenLogo}
+                            fluid
+                            as='a'
+                            href='https://www.willowglensystems.com/'
                             target='_blank'/>
                     </Grid.Column>
                     <Grid.Column>
