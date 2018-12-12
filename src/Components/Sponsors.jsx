@@ -9,6 +9,7 @@ import ServusLogo from '../logos/Servus.jpg'
 import DevFactoLogo from '../logos/DevFacto.png'
 import WillowglenLogo from '../logos/WillowglenSystems.jpg'
 import TelusLogo from '../logos/Telus.JPG'
+import CityOfEdmontonLogo from '../logos/CityOfEdmonton.png'
 
 import JobberLogo from '../logos/Jobber.jpg'
 import ThePodLogo from '../logos/ThePod.png'
@@ -76,6 +77,14 @@ class Sponsors extends Component {
                             fluid
                             as='a'
                             href='https://www.devfacto.com/'
+                            target='_blank'/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Image
+                            src={CityOfEdmontonLogo}
+                            fluid
+                            as='a'
+                            href='https://www.edmonton.ca/'
                             target='_blank'/>
                     </Grid.Column>
                     <Grid.Column>
