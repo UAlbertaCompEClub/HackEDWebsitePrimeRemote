@@ -119,6 +119,11 @@ const generalPanels = [
         title: 'Is this free?',
         content: "Yeah!",
       },
+      {
+        key: 'reimburse-travel',
+        title: 'Will i be reimbursed travel expenses?',
+        content: "Unfortunately, HackED will not be reimbursing travel expenses this year.",
+      }
   ]
 
   const hackingPanels = [
