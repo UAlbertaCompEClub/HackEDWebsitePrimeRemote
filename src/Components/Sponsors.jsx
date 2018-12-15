@@ -13,6 +13,7 @@ import CityOfEdmontonLogo from '../logos/CityOfEdmonton.png'
 
 import JobberLogo from '../logos/Jobber.jpg'
 import ThePodLogo from '../logos/ThePod.png'
+import AmiiLogo from '../logos/Amii.png'
 
 class Sponsors extends Component {
     
@@ -112,6 +113,14 @@ class Sponsors extends Component {
                             fluid
                             as='a'
                             href='https://www.pod-innovation.ca/'
+                            target='_blank'/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Image
+                            src={AmiiLogo}
+                            fluid
+                            as='a'
+                            href='https://www.amii.ca/'
                             target='_blank'/>
                     </Grid.Column>
                 </Grid.Row>
