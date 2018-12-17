@@ -86,7 +86,7 @@ const generalPanels = [
         key: 'can-i-work-remotely',
         title: 'Can I work remotely?',
         content: [
-            'Please contact us at hacked@compeclub.com.'
+            'Each team is allowed to have one remote participant contingent that the team has another team member physically present at the event.'
         ].join(' '),
       },
       {
