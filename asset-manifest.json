@@ -7,7 +7,7 @@
   "static/js/1.48b25a62.chunk.js.map": "/static/js/1.48b25a62.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/semantic.min.css": "/static/media/brand-icons.a046592b.woff",
+  "static/media/semantic.min.css": "/static/media/brand-icons.a1a749e8.svg",
   "static/media/HackED.png": "/static/media/HackED.07d63c8d.png",
   "static/media/Servus.jpg": "/static/media/Servus.0db5e6cc.jpg",
   "static/media/DevFacto.png": "/static/media/DevFacto.63739d07.png",
@@ -19,9 +19,9 @@
   "static/media/Amii.png": "/static/media/Amii.e2f07f78.png",
   "static/media/StickerMule.png": "/static/media/StickerMule.037f4766.png",
   "static/media/StartupEdmonton.png": "/static/media/StartupEdmonton.a196f615.png",
-  "static/css/main.0915b958.chunk.css.map": "/static/css/main.0915b958.chunk.css.map",
   "static/css/1.1e320942.chunk.css.map": "/static/css/1.1e320942.chunk.css.map",
+  "static/css/main.0915b958.chunk.css.map": "/static/css/main.0915b958.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.998b232b2c6c57bfa206f8a7fc22b86b.js": "/precache-manifest.998b232b2c6c57bfa206f8a7fc22b86b.js",
+  "precache-manifest.0bbc19515d6729a4a6a5b22ffcc1f750.js": "/precache-manifest.0bbc19515d6729a4a6a5b22ffcc1f750.js",
   "service-worker.js": "/service-worker.js"
 }
