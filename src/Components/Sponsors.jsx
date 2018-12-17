@@ -14,6 +14,7 @@ import CityOfEdmontonLogo from '../logos/CityOfEdmonton.png'
 import JobberLogo from '../logos/Jobber.jpg'
 import ThePodLogo from '../logos/ThePod.png'
 import AmiiLogo from '../logos/Amii.png'
+import FacultyOfEngineeringLogo from '../logos/FacultyOfEngineering.jpg'
 
 import StickerMuleLogo from '../logos/StickerMule.png'
 
@@ -123,6 +124,14 @@ class Sponsors extends Component {
                             fluid
                             as='a'
                             href='https://www.amii.ca/'
+                            target='_blank'/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Image
+                            src={FacultyOfEngineeringLogo}
+                            fluid
+                            as='a'
+                            href='https://www.ualberta.ca/electrical-computer-engineering'
                             target='_blank'/>
                     </Grid.Column>
                 </Grid.Row>
