@@ -15,6 +15,8 @@ import JobberLogo from '../logos/Jobber.jpg'
 import ThePodLogo from '../logos/ThePod.png'
 import AmiiLogo from '../logos/Amii.png'
 
+import StickerMuleLogo from '../logos/StickerMule.png'
+
 class Sponsors extends Component {
     
     render() {
@@ -121,6 +123,17 @@ class Sponsors extends Component {
                             fluid
                             as='a'
                             href='https://www.amii.ca/'
+                            target='_blank'/>
+                    </Grid.Column>
+                </Grid.Row>
+                <Divider horizontal>STICKERS PROVIDED BY</Divider>
+                <Grid.Row verticalAlign='middle' centered>
+                    <Grid.Column>
+                        <Image
+                            src={StickerMuleLogo}
+                            fluid
+                            as='a'
+                            href='http://hackp.ac/mlh-stickermule-hackathons'
                             target='_blank'/>
                     </Grid.Column>
                 </Grid.Row>
