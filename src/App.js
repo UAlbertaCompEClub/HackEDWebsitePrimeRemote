@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Image, Button } from 'semantic-ui-react'
-import HackEDLogo from './HackEDLogo.svg';
+import HackEDLogo from './logos/HackED.png';
 import About from './Components/About'
 import WhereToGo from './Components/WhereToGo'
 import Faq from './Components/Faq'
@@ -24,7 +24,7 @@ class App extends Component {
           centered 
           style={{height: '100vh', background: "linear-gradient(180deg, #FFFFFF 70%, #d02120 90%)"}}>
           <Grid.Row>
-            <Grid.Column width={12} textAlign='center' style={{paddingTop: "15vh"}}>
+            <Grid.Column width={10} textAlign='center' style={{paddingTop: "5vh"}}>
               <Image src={HackEDLogo} fluid />
               <h2>Alberta's Largest Student Run Hackathon</h2>
               <h3>January 19 - 20 @ The Donadeo Innovation Centre for Engineering</h3>
