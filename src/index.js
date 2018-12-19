@@ -4,6 +4,9 @@ import './index.css';
 import 'semantic-ui-css/semantic.min.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// For IE
+require('es6-promise').polyfill();
+require('es6-object-assign').polyfill();
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

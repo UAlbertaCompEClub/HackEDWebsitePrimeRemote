@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://hacked.compeclub.com/",
   "dependencies": {
+    "es6-object-assign": "^1.1.0",
+    "es6-promise": "^4.2.5",
     "gh-pages": "^2.0.1",
     "google-maps-react": "^2.0.2",
     "react": "^16.5.2",
