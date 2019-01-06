@@ -131,6 +131,10 @@ class Schedule extends Component {
         color: 'white'
     };
 
+    dateStyle = {
+        color: '#D02120'
+    };
+
     renderScheduleItem(item){
         if (item.fullDate){
             return <li style={this.dateHeaderStyle} className="list-group-item" key={item.fullDate}><b>{item.fullDate}</b></li>;
@@ -139,11 +143,13 @@ class Schedule extends Component {
             return (
                 <li className="list-group-item" key={item.title}>
                     <Grid columns={2} divided>
-                        <Grid.Column width={1}>
-                            <Icon size="big" name={item.icon}/>
+                        <Grid.Column mobile={2} tablet={2} computer={1}>
+                            <Icon fitted size="big" name={item.icon}/>
                         </Grid.Column>
-                        <Grid.Column width={15}>
-                            <b>{item.title}</b><p>{item.date}</p>
+                        <Grid.Column mobile={14} tablet={14} computer={15}>
+                            <b>{item.title}</b>
+                            <p>{item.date}</p>
+                            <p style={this.dateStyle}>{item.location}</p>
                         </Grid.Column>
                     </Grid>
                 </li>
@@ -153,10 +159,10 @@ class Schedule extends Component {
             return (
             <li className="list-group-item" key={item.title}>
                 <Grid columns={2} divided>
-                    <Grid.Column width={1}>
-                        <Icon size="big" name={item.icon}/>
+                    <Grid.Column mobile={2} tablet={2} computer={1}>
+                        <Icon fitted size="big" name={item.icon}/>
                     </Grid.Column>
-                    <Grid.Column width={15}>
+                    <Grid.Column mobile={14} tablet={14} computer={15}>
                         <b>{item.title}</b>
                         <p>{item.date}</p>
                     </Grid.Column>
