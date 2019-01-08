@@ -7,6 +7,9 @@ import * as serviceWorker from './serviceWorker';
 // For IE
 require('es6-promise').polyfill();
 require('es6-object-assign').polyfill();
+import { config } from "./push/firebaseConfig";
+import firebase from "firebase";
+firebase.initializeApp(config);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
