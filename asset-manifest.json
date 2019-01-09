@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.0ef15b9a.chunk.css",
-  "main.js": "/static/js/main.1c46a710.chunk.js",
-  "main.js.map": "/static/js/main.1c46a710.chunk.js.map",
+  "main.js": "/static/js/main.d7036899.chunk.js",
+  "main.js.map": "/static/js/main.d7036899.chunk.js.map",
   "static/css/1.b43f40f5.chunk.css": "/static/css/1.b43f40f5.chunk.css",
   "static/js/1.1e94fc73.chunk.js": "/static/js/1.1e94fc73.chunk.js",
   "static/js/1.1e94fc73.chunk.js.map": "/static/js/1.1e94fc73.chunk.js.map",
@@ -20,9 +20,9 @@
   "static/media/FacultyOfEngineering.jpg": "/static/media/FacultyOfEngineering.15c8062d.jpg",
   "static/media/StickerMule.png": "/static/media/StickerMule.037f4766.png",
   "static/media/StartupEdmonton.png": "/static/media/StartupEdmonton.a196f615.png",
-  "static/css/1.b43f40f5.chunk.css.map": "/static/css/1.b43f40f5.chunk.css.map",
   "static/css/main.0ef15b9a.chunk.css.map": "/static/css/main.0ef15b9a.chunk.css.map",
+  "static/css/1.b43f40f5.chunk.css.map": "/static/css/1.b43f40f5.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.b42f3786df8fa4a317ba4a368173eae2.js": "/precache-manifest.b42f3786df8fa4a317ba4a368173eae2.js",
+  "precache-manifest.98aacc12dc486c4532bd6daf78d697c9.js": "/precache-manifest.98aacc12dc486c4532bd6daf78d697c9.js",
   "service-worker.js": "/service-worker.js"
 }
