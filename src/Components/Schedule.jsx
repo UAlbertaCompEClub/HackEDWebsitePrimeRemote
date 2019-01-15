@@ -143,10 +143,10 @@ class Schedule extends Component {
             return (
                 <li className="list-group-item" key={item.title}>
                     <Grid columns={2} divided>
-                        <Grid.Column mobile={2} tablet={2} computer={1}>
+                        <Grid.Column mobile={3} tablet={3} computer={1}>
                             <Icon fitted size="big" name={item.icon}/>
                         </Grid.Column>
-                        <Grid.Column mobile={14} tablet={14} computer={15}>
+                        <Grid.Column mobile={13} tablet={13} computer={15}>
                             <b>{item.title}</b>
                             <p>{item.date}</p>
                             <p style={this.dateStyle}>{item.location}</p>
@@ -159,10 +159,10 @@ class Schedule extends Component {
             return (
             <li className="list-group-item" key={item.title}>
                 <Grid columns={2} divided>
-                    <Grid.Column mobile={2} tablet={2} computer={1}>
+                    <Grid.Column mobile={3} tablet={3} computer={1}>
                         <Icon fitted size="big" name={item.icon}/>
                     </Grid.Column>
-                    <Grid.Column mobile={14} tablet={14} computer={15}>
+                    <Grid.Column mobile={13} tablet={13} computer={15}>
                         <b>{item.title}</b>
                         <p>{item.date}</p>
                     </Grid.Column>
