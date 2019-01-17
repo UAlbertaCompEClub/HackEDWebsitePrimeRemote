@@ -529,12 +529,12 @@ class Schedule extends Component {
         return (
             <div>
                 <Container>
-                    <br/>
+                    {/* <br/>
                     <h1 style={{textAlign: 'center'}}>Presentation Schedule</h1>
                     <br/>
                     <ul className="list-group"> 
                         {presentationSchedule.map(item => this.renderPresentationScheduleItem(item))}
-                    </ul>
+                    </ul> */}
                     <br/>
                     <h1 style={{textAlign: 'center'}}>Schedule</h1>
                     <br/>
