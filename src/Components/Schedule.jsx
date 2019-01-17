@@ -28,14 +28,14 @@ const scheduleItems = [
         title: "SciKit Learn workshop",
         date: "Saturday 1:00pm - Saturday 2:30pm",
         icon: 'pencil alternate',
-        location: "ETLC-001",
+        location: "ETLC E2-001",
         description: "Get a primer on classification as well as SciKit Learn. Great for those interested in AI. Part 1 in a 2 part series."
     },
     {
         title: "Intro to git",
         date: "Saturday 1:00pm - Saturday 2:30pm",
         icon: 'pencil alternate',
-        location: "ETLC-002",
+        location: "ETLC E2-002",
         description: "Highly recommended for anyone who doesn't know git."
     },
     {
@@ -48,14 +48,14 @@ const scheduleItems = [
     {
         title: "Natural Language Processing Primer",
         date: "Saturday 2:00pm - Saturday 3:30pm",
-        location: "ETLC-001",
+        location: "ETLC E2-001",
         icon: 'pencil alternate',
         description: "Builds off of material covered in the SciKit Learn workshop. Part 2 of the 2 part series."
     },
     {
         title: "Intro to React",
         date: "Saturday 2:00pm - Saturday 3:30pm",
-        location: "ETLC-002",
+        location: "ETLC E2-002",
         icon: 'pencil alternate',
         description: "Great primer for anyone who wants to learn about React."
     },
@@ -83,14 +83,14 @@ const scheduleItems = [
     {
         title: "Supervisory control and data acquisition (SCADA)",
         date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "ETLC-001",
+        location: "ETLC E2-001",
         icon: 'pencil alternate',
         description: "Learn what Willowglen does!"
     },
     {
         title: "Realtime traffic sign detection using YOLO",
         date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "ETLC-002",
+        location: "ETLC E2-002",
         icon: 'pencil alternate',
     },
     {
@@ -102,7 +102,7 @@ const scheduleItems = [
     {
         title: "Coding Quality",
         date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "ETLC-Solarium",
+        location: "ETLC Solarium",
         icon: 'pencil alternate',
     },
     {
@@ -113,13 +113,13 @@ const scheduleItems = [
     {
         title: "Hardware Debugging - Tips & Tricks",
         date: "Saturday 8:00pm - Saturday 9:30pm",
-        location: "ETLC-001",
+        location: "ETLC E2-001",
         icon: 'pencil alternate'
     },
     {
         title: "Open Data and API Endpoints For your Apps",
         date: "Saturday 8:00pm - Saturday 9:30pm",
-        location: "ETLC-002",
+        location: "ETLC E2-002",
         icon: 'pencil alternate'
     },
     {
@@ -131,13 +131,13 @@ const scheduleItems = [
     {
         title: "Design for Delight",
         date: "Saturday 8:00pm - Saturday 9:30pm",
-        location: "ETLC-Solarium",
+        location: "ETLC Solarium",
         icon: 'pencil alternate'
     },
     {
         title: "MLH Cup Stacking",
         date: "Saturday 9:00pm",
-        location: "Solarium",
+        location: "ETLC Solarium",
         icon: 'gamepad'
     },
     {
