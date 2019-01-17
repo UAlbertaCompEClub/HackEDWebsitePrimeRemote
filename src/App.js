@@ -8,6 +8,7 @@ import Footer from './Components/Footer'
 import Sponsors from './Components/Sponsors'
 import Header from './Components/NavigationBar'
 import Schedule from './Components/Schedule'
+import PresentationSchedule from './Components/PresentationSchedule'
 import './App.css';
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
         <About/>
         <WhereToGo/>
         <Faq/>
+        {/* <PresentationSchedule/> */}
         <Schedule/>
         <Sponsors/>
         <Footer/>
