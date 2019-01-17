@@ -90,19 +90,19 @@ const scheduleItems = [
     {
         title: "Realtime traffic sign detection using YOLO",
         date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "ETLC-001",
+        location: "ETLC-002",
         icon: 'pencil alternate',
     },
     {
         title: "Introduction to Rx Java",
         date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "ETLC-001",
+        location: "DICE 8-207",
         icon: 'pencil alternate',
     },
     {
         title: "Coding Quality",
         date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "ETLC-001",
+        location: "ETLC-Solarium",
         icon: 'pencil alternate',
     },
     {
@@ -123,13 +123,13 @@ const scheduleItems = [
         icon: 'pencil alternate'
     },
     {
-        title: "Intro to docker",
+        title: "Intro to Docker",
         date: "Saturday 8:00pm - Saturday 9:30pm",
         location: "DICE 8-207",
         icon: 'pencil alternate'
     },
     {
-        title: "Intuit",
+        title: "Design for Delight",
         date: "Saturday 8:00pm - Saturday 9:30pm",
         location: "ETLC-Solarium",
         icon: 'pencil alternate'
