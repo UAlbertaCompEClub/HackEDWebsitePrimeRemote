@@ -75,33 +75,33 @@ const scheduleItems = [
     },
     {
         title: "Pitching a Hackathon",
-        date: "Saturday 3:30pm - Saturday 4:30pm",
+        date: "Saturday 3:30pm - Saturday 4:20pm",
         location: "DICE 8-207",
         icon: 'pencil alternate',
         description: "Getting serious about a hack? Learn how to pitch it to judges!"
     },
     {
         title: "Supervisory control and data acquisition (SCADA)",
-        date: "Saturday 4:30pm - Saturday 5:30pm",
+        date: "Saturday 4:30pm - Saturday 6:00pm",
         location: "ETLC-001",
         icon: 'pencil alternate',
         description: "Learn what Willowglen does!"
     },
     {
         title: "Realtime traffic sign detection using YOLO",
-        date: "Saturday 4:30pm - Saturday 5:30pm",
+        date: "Saturday 4:30pm - Saturday 6:00pm",
         location: "ETLC-001",
         icon: 'pencil alternate',
     },
     {
         title: "Introduction to Rx Java",
-        date: "Saturday 4:30pm - Saturday 5:30pm",
+        date: "Saturday 4:30pm - Saturday 6:00pm",
         location: "ETLC-001",
         icon: 'pencil alternate',
     },
     {
         title: "Coding Quality",
-        date: "Saturday 4:30pm - Saturday 5:30pm",
+        date: "Saturday 4:30pm - Saturday 6:00pm",
         location: "ETLC-001",
         icon: 'pencil alternate',
     },
@@ -112,13 +112,13 @@ const scheduleItems = [
     },
     {
         title: "Hardware Debugging - Tips & Tricks",
-        date: "Saturday 5:30pm - Saturday 7:00pm",
+        date: "Saturday 8:00pm - Saturday 9:30pm",
         location: "ETLC-001",
         icon: 'pencil alternate'
     },
     {
         title: "Open Data and API Endpoints For your Apps",
-        date: "Saturday 7:00pm - Saturday 8:00pm",
+        date: "Saturday 8:00pm - Saturday 9:30pm",
         location: "ETLC-002",
         icon: 'pencil alternate'
     },
@@ -139,12 +139,6 @@ const scheduleItems = [
         date: "Saturday 9:00pm",
         location: "Solarium",
         icon: 'gamepad'
-    },
-    {
-        title: "Workshop TBD",
-        date: "Saturday 9:30pm - Saturday 10:30pm",
-        location: "DICE 8-207",
-        icon: 'pencil alternate'
     },
     {
         fullDate: "January 20, 2019 (Sunday)"
