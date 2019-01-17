@@ -231,12 +231,12 @@ const presentationSchedule = [
             time: "09:00-09:15"
         },
         {
-            team: "Team8",
+            team: "Team75",
             time: "09:00-09:15",
             room: "ETLC E1 013"
         },
         {
-            team: "Team10",
+            team: "Team55",
             time: "09:00-09:15",
             room: "ETLC E1 015"
         },
@@ -246,12 +246,12 @@ const presentationSchedule = [
             room: "ETLC E1 017"
         },
         {
-            team: "Team4",
+            team: "Team45",
             time: "09:00-09:15",
             room: "ETLC E1 021"
         },
         {
-            team: "Team1",
+            team: "Team115",
             time: "09:00-09:15",
             room: "ETLC E2 023"
         },
@@ -262,27 +262,27 @@ const presentationSchedule = [
             time: "09:15-09:30"
         },
         {
-            team: "Team9",
+            team: "Team95",
             time: "09:15-09:30",
             room: "ETLC E1 013"
         },
         {
-            team: "Team11",
+            team: "Team25",
             time: "09:15-09:30",
             room: "ETLC E1 015"
         },
         {
-            team: "Team6",
+            team: "Team9",
             time: "09:15-09:30",
             room: "ETLC E1 017"
         },
         {
-            team: "Team2",
+            team: "Team5",
             time: "09:15-09:30",
             room: "ETLC E1 021"
         },
         {
-            team: "Team3",
+            team: "Team1",
             time: "09:15-09:30",
             room: "ETLC E2 023"
         },
@@ -293,11 +293,79 @@ const presentationSchedule = [
             time: "09:30-09:45"
         },
         {
-            team: "Team5",
+            team: "Team4",
             time: "09:30-09:45",
             room: "ETLC E1 013"
         },
-    ]    
+        {
+            team: "Team6",
+            time: "09:30-09:45",
+            room: "ETLC E1 015"
+        },
+        {
+            team: "Team2",
+            time: "09:30-09:45",
+            room: "ETLC E1 017"
+        },
+        {
+            team: "Team35",
+            time: "09:30-09:45",
+            room: "ETLC E1 021"
+        },
+        {
+            team: "Team105",
+            time: "09:30-09:45",
+            room: "ETLC E2 023"
+        },
+    ],
+    [
+        {
+            header: "true",
+            time: "09:45-10:00"
+        },
+        {
+            team: "Team65",
+            time: "09:45-10:00",
+            room: "ETLC E1 013"
+        },
+        {
+            team: "Team3",
+            time: "09:45-10:00",
+            room: "ETLC E1 015"
+        },
+        {
+            team: "Team85",
+            time: "09:45-10:00",
+            room: "ETLC E1 017"
+        },
+        {
+            team: "Team15",
+            time: "09:45-10:00",
+            room: "ETLC E1 021"
+        },
+        {
+            team: "Team11",
+            time: "09:45-10:00",
+            room: "ETLC E2 023"
+        },
+    ],
+    [
+        {
+            header: "true",
+            time: "10:00-10:15"
+        },
+        {
+            team: "Team10",
+            time: "10:00-10:15",
+            room: "ETLC E1 013"
+        },
+        {
+            team: "Team8",
+            time: "10:00-10:15",
+            room: "ETLC E1 015"
+        },
+    ],
+    
 ];
 
 class Schedule extends Component {
@@ -458,12 +526,12 @@ class Schedule extends Component {
         return (
             <div>
                 <Container>
-                    {/* <br/>
+                    <br/>
                     <h1 style={{textAlign: 'center'}}>Presentation Schedule</h1>
                     <br/>
                     <ul className="list-group"> 
                         {presentationSchedule.map(item => this.renderPresentationScheduleItem(item))}
-                    </ul> */}
+                    </ul>
                     <br/>
                     <h1 style={{textAlign: 'center'}}>Schedule</h1>
                     <br/>
