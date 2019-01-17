@@ -92,21 +92,18 @@ const scheduleItems = [
         date: "Saturday 4:30pm - Saturday 5:30pm",
         location: "ETLC-001",
         icon: 'pencil alternate',
-        description: "Learn what Willowglen does!"
     },
     {
         title: "Introduction to Rx Java",
         date: "Saturday 4:30pm - Saturday 5:30pm",
         location: "ETLC-001",
         icon: 'pencil alternate',
-        description: "Learn what Willowglen does!"
     },
     {
         title: "Coding Quality",
         date: "Saturday 4:30pm - Saturday 5:30pm",
         location: "ETLC-001",
         icon: 'pencil alternate',
-        description: "Learn what Willowglen does!"
     },
     {
         title: "Dinner",
@@ -114,21 +111,27 @@ const scheduleItems = [
         icon: 'food'
     },
     {
-        title: "Workshop TBD",
+        title: "Hardware Debugging - Tips & Tricks",
         date: "Saturday 5:30pm - Saturday 7:00pm",
-        location: "DICE 8-207",
+        location: "ETLC-001",
         icon: 'pencil alternate'
     },
     {
-        title: "Workshop TBD",
+        title: "Open Data and API Endpoints For your Apps",
         date: "Saturday 7:00pm - Saturday 8:00pm",
-        location: "DICE 8-207",
+        location: "ETLC-002",
         icon: 'pencil alternate'
     },
     {
-        title: "Hardware Debugging",
+        title: "Intro to docker",
         date: "Saturday 8:00pm - Saturday 9:30pm",
         location: "DICE 8-207",
+        icon: 'pencil alternate'
+    },
+    {
+        title: "Intuit",
+        date: "Saturday 8:00pm - Saturday 9:30pm",
+        location: "ETLC-Solarium",
         icon: 'pencil alternate'
     },
     {
