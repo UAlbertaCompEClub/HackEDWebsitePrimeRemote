@@ -210,10 +210,10 @@ class Schedule extends Component {
             return (
                 <li className="list-group-item" key={item.title}>
                     <Grid columns={2} divided>
-                        <Grid.Column mobile={2} tablet={2} computer={1}>
+                        <Grid.Column mobile={3} tablet={3} computer={1}>
                             <Icon fitted size="big" name={item.icon}/>
                         </Grid.Column>
-                        <Grid.Column mobile={14} tablet={14} computer={15}>
+                        <Grid.Column mobile={13} tablet={13} computer={15}>
                             <b>{item.title}</b>
                             <p>{item.date}</p>
                             <p>{item.description}</p>
@@ -227,10 +227,10 @@ class Schedule extends Component {
             return (
                 <li className="list-group-item" key={item.title}>
                     <Grid columns={2} divided>
-                        <Grid.Column mobile={2} tablet={2} computer={1}>
+                        <Grid.Column mobile={3} tablet={3} computer={1}>
                             <Icon fitted size="big" name={item.icon}/>
                         </Grid.Column>
-                        <Grid.Column mobile={14} tablet={14} computer={15}>
+                        <Grid.Column mobile={13} tablet={13} computer={15}>
                             <b>{item.title}</b>
                             <p>{item.date}</p>
                             <p>{item.description}</p>
@@ -275,9 +275,18 @@ class Schedule extends Component {
     render() {
         return (
             <div>
+                <Grid id="Schedule" style={{
+                    margin: 0,
+                    paddingBottom: 40,
+                    width:"100%"
+                }}
+                stackable
+                relaxed='very'
+                centered>
+                </Grid>
                 <Container>
                     <br/>
-                    <h1 style={{textAlign: 'center'}}>Schedule</h1>
+                    <h1 style={{textAlign: 'center'}}>SCHEDULE</h1>
                     <br/>
                     <ul className="list-group"> 
                         {scheduleItems.map(item => this.renderScheduleItem(item))}
