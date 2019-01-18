@@ -26,8 +26,11 @@ class App extends Component {
           centered 
           style={{height: '100vh', background: "linear-gradient(180deg, #FFFFFF 70%, #d02120 90%)"}}>
           <Grid.Row>
-            <Grid.Column width={10} textAlign='center' style={{paddingTop: "5vh"}}>
+            <Grid.Column mobile={12} tablet={12} computer={10} textAlign='center' style={{paddingTop: "10vh"}}>
               <Image src={HackEDLogo} fluid />
+              <br></br>
+              <br></br>
+              <br></br>
               <h2>Alberta's Largest Student Run Hackathon</h2>
               <h3>January 19 - 20 @ The Donadeo Innovation Centre for Engineering</h3>
               <Button onClick={(e) => this.redirectToExternalUrl('https://www.eventbrite.ca/e/hacked-2019-tickets-52785383503', e)} color='hackedred' size='huge'>Register Here!</Button>
