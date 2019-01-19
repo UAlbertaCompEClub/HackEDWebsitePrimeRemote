@@ -25,22 +25,22 @@ const scheduleItems = [
         icon: 'hourglass start'
     },
     {
-        title: "SciKit Learn workshop",
-        date: "Saturday 1:00pm - Saturday 2:30pm",
+        title: "SciKit Learn Workshop",
+        date: "Saturday 1:00pm - Saturday 1:50pm",
         icon: 'pencil alternate',
         location: "ETLC E2-001",
         description: "Get a primer on classification as well as SciKit Learn. Great for those interested in AI. Part 1 in a 2 part series."
     },
     {
-        title: "Intro to git",
-        date: "Saturday 1:00pm - Saturday 2:30pm",
+        title: "Intro to Git",
+        date: "Saturday 1:00pm - Saturday 1:50pm",
         icon: 'pencil alternate',
         location: "ETLC E2-002",
         description: "Highly recommended for anyone who doesn't know git."
     },
     {
-        title: "Team Finding workshop",
-        date: "Saturday 1:00pm - Saturday 2:30pm",
+        title: "Team Finding Workshop",
+        date: "Saturday 1:00pm - Saturday 1:50pm",
         icon: 'pencil alternate',
         location: "DICE 8-207",
         description: "For students who don't have teams yet to find a group."
@@ -81,14 +81,14 @@ const scheduleItems = [
         description: "Getting serious about a hack? Learn how to pitch it to judges!"
     },
     {
-        title: "Supervisory control and data acquisition (SCADA)",
+        title: "How To Not Lose a Billion Dollars",
         date: "Saturday 4:30pm - Saturday 6:00pm",
         location: "ETLC E2-001",
         icon: 'pencil alternate',
-        description: "Learn what Willowglen does!"
+        description: "A behind the scenes look of industrial SCADA systems"
     },
     {
-        title: "Realtime traffic sign detection using YOLO",
+        title: "Realtime Traffic Sign Detection Using YOLO",
         date: "Saturday 4:30pm - Saturday 6:00pm",
         location: "ETLC E2-002",
         icon: 'pencil alternate',
@@ -114,7 +114,8 @@ const scheduleItems = [
         title: "Hardware Debugging - Tips & Tricks",
         date: "Saturday 8:00pm - Saturday 9:30pm",
         location: "ETLC E2-001",
-        icon: 'pencil alternate'
+        icon: 'pencil alternate',
+        description: "An example driven conversation about how to approach embedded debugging and creative problem solving"
     },
     {
         title: "Open Data and API Endpoints For your Apps",
@@ -149,7 +150,7 @@ const scheduleItems = [
         icon: 'food'
     },
     {
-        title: "Breakfast is served",
+        title: "Breakfast Is Served",
         date: "Sunday 7:30am",
         icon: 'food'
     },
@@ -185,7 +186,7 @@ const scheduleItems = [
         icon: 'clock'
     },
     {
-        title: "Venue closes for participants",
+        title: "Venue Closes For Participants",
         date: "Sunday 5:30pm",
         icon: 'lock'
     },
