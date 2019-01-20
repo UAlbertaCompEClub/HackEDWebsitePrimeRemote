@@ -11,23 +11,15 @@ const presentationSchedule = [
         },
         {
             header: "true",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
             header: "true",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
             header: "true",
-            room: "ETLC E1 017"
-        },
-        {
-            header: "true",
-            room: "ETLC E1 021"
-        },
-        {
-            header: "true",
-            room: "ETLC E2 023"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
     [
@@ -36,29 +28,19 @@ const presentationSchedule = [
             time: "09:00-09:05"
         },
         {
-            team: "Team1",
+            team: "balloonpowers",
             time: "09:00-09:05",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
-            team: "Team95",
+            team: "BotSpotr",
             time: "09:00-09:05",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
-            team: "Team458",
+            team: "WineSuggest",
             time: "09:00-09:05",
-            room: "ETLC E1 017"
-        },
-        {
-            team: "Team58",
-            time: "09:00-09:05",
-            room: "ETLC E1 021"
-        },
-        {
-            team: "Team98",
-            time: "09:00-09:05",
-            room: "ETLC E2 023"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
     [
@@ -67,29 +49,19 @@ const presentationSchedule = [
             time: "09:05-09:10"
         },
         {
-            team: "Team15",
+            team: "Make-me-laugh",
             time: "09:05-09:10",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
-            team: "Team3",
+            team: "Internet Tracker",
             time: "09:05-09:10",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
-            team: "Team758",
+            team: "Search for the Best Garfield Comic",
             time: "09:05-09:10",
-            room: "ETLC E1 017"
-        },
-        {
-            team: "Team78",
-            time: "09:05-09:10",
-            room: "ETLC E1 021"
-        },
-        {
-            team: "Team958",
-            time: "09:05-09:10",
-            room: "ETLC E2 023"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
     [
@@ -98,29 +70,19 @@ const presentationSchedule = [
             time: "09:10-09:15"
         },
         {
-            team: "Team1058",
+            team: "DreamMeme",
             time: "09:10-09:15",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
-            team: "Team38",
+            team: "HACKED2019",
             time: "09:10-09:15",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
-            team: "Team25",
+            team: "shouldnt.js",
             time: "09:10-09:15",
-            room: "ETLC E1 017"
-        },
-        {
-            team: "Team115",
-            time: "09:10-09:15",
-            room: "ETLC E1 021"
-        },
-        {
-            team: "Team105",
-            time: "09:10-09:15",
-            room: "ETLC E2 023"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
     [
@@ -129,29 +91,19 @@ const presentationSchedule = [
             time: "09:15-09:20"
         },
         {
-            team: "Team558",
+            team: "Feelsbook",
             time: "09:15-09:20",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
-            team: "Team7",
+            team: "HackED2019",
             time: "09:15-09:20",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
-            team: "Team45",
+            team: "HackED-2019-Not!!EchoSock",
             time: "09:15-09:20",
-            room: "ETLC E1 017"
-        },
-        {
-            team: "Team28",
-            time: "09:15-09:20",
-            room: "ETLC E1 021"
-        },
-        {
-            team: "Team5",
-            time: "09:15-09:20",
-            room: "ETLC E2 023"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
     [
@@ -160,29 +112,19 @@ const presentationSchedule = [
             time: "09:20-09:25"
         },
         {
-            team: "Team48",
+            team: "EulerTikz",
             time: "09:20-09:25",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
-            team: "Team2",
+            team: "uAlberta5Star",
             time: "09:20-09:25",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
-            team: "Team55",
+            team: "Profolio Hack",
             time: "09:20-09:25",
-            room: "ETLC E1 017"
-        },
-        {
-            team: "Team18",
-            time: "09:20-09:25",
-            room: "ETLC E1 021"
-        },
-        {
-            team: "Team358",
-            time: "09:20-09:25",
-            room: "ETLC E2 023"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
     [
@@ -191,29 +133,19 @@ const presentationSchedule = [
             time: "09:25-09:30"
         },
         {
-            team: "Team11",
+            team: "Divergence",
             time: "09:25-09:30",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
-            team: "Team6",
+            team: "EyeMouse",
             time: "09:25-09:30",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
-            team: "Team9",
+            team: "petah-royale",
             time: "09:25-09:30",
-            room: "ETLC E1 017"
-        },
-        {
-            team: "Team75",
-            time: "09:25-09:30",
-            room: "ETLC E1 021"
-        },
-        {
-            team: "Team8",
-            time: "09:25-09:30",
-            room: "ETLC E2 023"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
     [
@@ -222,29 +154,19 @@ const presentationSchedule = [
             time: "09:30-09:35"
         },
         {
-            team: "Team10",
+            team: "Rover the Explorer",
             time: "09:30-09:35",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
-            team: "Team4",
+            team: "MovieBot",
             time: "09:30-09:35",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
-            team: "Team85",
+            team: "One Stop Photoshop",
             time: "09:30-09:35",
-            room: "ETLC E1 017"
-        },
-        {
-            team: "Team258",
-            time: "09:30-09:35",
-            room: "ETLC E1 021"
-        },
-        {
-            team: "Team158",
-            time: "09:30-09:35",
-            room: "ETLC E2 023"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
     [
@@ -253,29 +175,19 @@ const presentationSchedule = [
             time: "09:35-09:40"
         },
         {
-            team: "Team118",
+            team: "Beat The Odds",
             time: "09:35-09:40",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
-            team: "Team35",
+            team: "Boppo",
             time: "09:35-09:40",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
-            team: "Team65",
+            team: "Geographic News Contextualizer",
             time: "09:35-09:40",
-            room: "ETLC E1 017"
-        },
-        {
-            team: "Team68",
-            time: "09:35-09:40",
-            room: "ETLC E1 021"
-        },
-        {
-            team: "Team108",
-            time: "09:35-09:40",
-            room: "ETLC E2 023"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
     [
@@ -284,27 +196,162 @@ const presentationSchedule = [
             time: "09:40-09:45"
         },
         {
-            team: "Team1158",
+            team: "course prerequisites",
             time: "09:40-09:45",
-            room: "ETLC E1 013"
+            room: "Banff (DICE 8A-246)"
         },
         {
-            team: "Team88",
+            team: "Shade",
             time: "09:40-09:45",
-            room: "ETLC E1 015"
+            room: "Jasper (8-236)"
         },
         {
-            team: "Team858",
+            team: "Student Gradebook",
             time: "09:40-09:45",
-            room: "ETLC E1 017"
-        },
-        {
-            team: "Team658",
-            time: "09:40-09:45",
-            room: "ETLC E1 021"
+            room: "Lake Louise (DICE 8A-242)"
         },
     ],
-    
+    [
+        {
+            header: "true",
+            time: "09:45-09:50"
+        },
+        {
+            team: "git-emotional",
+            time: "09:45-09:50",
+            room: "Banff (DICE 8A-246)"
+        },
+        {
+            team: "ARMageddon",
+            time: "09:45-09:50",
+            room: "Jasper (8-236)"
+        },
+        {
+            team: "UofA-advisor",
+            time: "09:45-09:50",
+            room: "Lake Louise (DICE 8A-242)"
+        },
+    ],
+    [
+        {
+            header: "true",
+            time: "09:50-09:55"
+        },
+        {
+            team: "CloudCity",
+            time: "09:50-09:55",
+            room: "Banff (DICE 8A-246)"
+        },
+        {
+            team: "Room Searcher",
+            time: "09:50-09:55",
+            room: "Jasper (8-236)"
+        },
+        {
+            team: "Android-App-1",
+            time: "09:50-09:55",
+            room: "Lake Louise (DICE 8A-242)"
+        },
+    ],
+    [
+        {
+            header: "true",
+            time: "09:55-10:00"
+        },
+        {
+            team: "Space Jump",
+            time: "09:55-10:00",
+            room: "Banff (DICE 8A-246)"
+        },
+        {
+            team: "Yah-fi-API",
+            time: "09:55-10:00",
+            room: "Jasper (8-236)"
+        },
+        {
+            team: "Roommates",
+            time: "09:55-10:00",
+            room: "Lake Louise (DICE 8A-242)"
+        },
+    ],
+    [
+        {
+            header: "true",
+            time: "10:00-10:05"
+        },
+        {
+            team: "Pipe",
+            time: "10:00-10:05",
+            room: "Banff (DICE 8A-246)"
+        },
+        {
+            team: "Crowd Density Estimator",
+            time: "10:00-10:05",
+            room: "Jasper (8-236)"
+        },
+        {
+            team: "Tuber",
+            time: "10:00-10:05",
+            room: "Lake Louise (DICE 8A-242)"
+        },
+    ],
+    [
+        {
+            header: "true",
+            time: "10:05-10:10"
+        },
+        {
+            team: "Gesture Controlled Desktop Robotic Arm",
+            time: "10:05-10:10",
+            room: "Banff (DICE 8A-246)"
+        },
+        {
+            team: "RapidRenter",
+            time: "10:05-10:10",
+            room: "Jasper (8-236)"
+        },
+        {
+            team: "Eraser",
+            time: "10:05-10:10",
+            room: "Lake Louise (DICE 8A-242)"
+        },
+    ],
+    [
+        {
+            header: "true",
+            time: "10:10-10:15"
+        },
+        {
+            team: "MyHealth",
+            time: "10:10-10:15",
+            room: "Banff (DICE 8A-246)"
+        },
+        {
+            team: "ChemARstry",
+            time: "10:10-10:15",
+            room: "Jasper (8-236)"
+        },
+        {
+            team: "enigma-shell",
+            time: "10:10-10:15",
+            room: "Lake Louise (DICE 8A-242)"
+        },
+    ],
+    [
+        {
+            header: "true",
+            time: "10:15-10:20"
+        },
+        {
+            team: "WhatWear",
+            time: "10:15-10:20",
+            room: "Banff (DICE 8A-246)"
+        },
+        {
+        },
+        {
+        },
+    ]    
 ];
 
 class PresentationSchedule extends Component {
@@ -354,7 +401,7 @@ class PresentationSchedule extends Component {
     renderPresentationScheduleItem(rows){
         return (
                     <li className="list-group-item">
-                    <Grid columns={6} divided>
+                    <Grid columns={4} divided>
                         {rows.map(item => this.renderPresentationScheduleItemCol(item))}
                     </Grid>
                 </li>
@@ -385,25 +432,26 @@ class PresentationSchedule extends Component {
 
     render() {
         return (
-            <Grid id="presentationSchedule" style={{
-                margin: 0,
-                paddingBottom: 40,
-            }}
-            stackable
-            relaxed='very'
-            >                
             <div>
-                    <Container>
-                        <br/>
-                        <h1 style={{textAlign: 'center'}}>PRESENTATION SCHEDULE</h1>
-                        <br/>
-                        <ul className="list-group"> 
-                            {presentationSchedule.map(item => this.renderPresentationScheduleItem(item))}
-                        </ul>
+                <Grid id="presentationSchedule" style={{
+                    margin: 0,
+                    paddingBottom: 40,
+                }}
+                stackable
+                relaxed='very'
+                >   
+                </Grid>             
+                        <Container>
+                            <br/>
+                            <h1 style={{textAlign: 'center'}}>PRESENTATION SCHEDULE</h1>
+                            <p style={{textAlign: 'center'}}>You will have 2 minutes to present, and 2 minutes to answer questions</p>
+                            <br/>
+                            <ul className="list-group"> 
+                                {presentationSchedule.map(item => this.renderPresentationScheduleItem(item))}
+                            </ul>
 
-                    </Container>
-                </div>
-            </Grid>
+                        </Container>
+            </div>
         );
     }
 }

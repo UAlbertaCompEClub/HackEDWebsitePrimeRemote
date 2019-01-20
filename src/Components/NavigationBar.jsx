@@ -19,9 +19,9 @@ class Header extends React.Component {
                     <NavItem eventKey={3} href="#Schedule">
                     Schedule 
                     </NavItem>
-                    {/* <NavItem eventKey={3} href="#presentationSchedule">
+                    <NavItem eventKey={3} href="#presentationSchedule">
                     Presentation Schedule
-                    </NavItem> */}
+                    </NavItem>
                 </Nav>
             </Navbar>
         );

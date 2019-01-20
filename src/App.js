@@ -42,7 +42,7 @@ class App extends Component {
         <About/>
         <WhereToGo/>
         <Faq/>
-        {/* <PresentationSchedule/> */}
+        <PresentationSchedule/>
         <Schedule/>
         <Sponsors/>
         <Footer/>
