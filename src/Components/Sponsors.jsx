@@ -17,6 +17,7 @@ import AmiiLogo from '../logos/Amii.png'
 import FacultyOfEngineeringLogo from '../logos/FacultyOfEngineering.jpg'
 
 import StickerMuleLogo from '../logos/StickerMule.png'
+import BrandMakersLogo from '../logos/BrandMakers.png'
 
 class Sponsors extends Component {
     
@@ -143,6 +144,17 @@ class Sponsors extends Component {
                             fluid
                             as='a'
                             href='http://hackp.ac/mlh-stickermule-hackathons'
+                            target='_blank'/>
+                    </Grid.Column>
+                </Grid.Row>
+                <Divider horizontal>SHIRTS PROVIDED BY</Divider>
+                <Grid.Row verticalAlign='middle' centered>
+                    <Grid.Column>
+                        <Image
+                            src={BrandMakersLogo}
+                            fluid
+                            as='a'
+                            href='https://www.brandmakers.com/'
                             target='_blank'/>
                     </Grid.Column>
                 </Grid.Row>
