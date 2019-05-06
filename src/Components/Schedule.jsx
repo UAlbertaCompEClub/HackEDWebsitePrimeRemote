@@ -7,7 +7,7 @@ const PRESENTATION_SCHEDULE_NUM_COLUMNS = 4;
 
 const scheduleItems = [
     {
-        fullDate: "January 19, 2019 (Saturday)"
+        fullDate: "January 18, 2020 (Saturday)"
     },
     {
         title: "Doors open for Hackers",
@@ -24,131 +24,131 @@ const scheduleItems = [
         date: "Saturday 12:00pm",
         icon: 'hourglass start'
     },
-    {
-        title: "SciKit Learn Workshop",
-        date: "Saturday 1:00pm - Saturday 1:50pm",
-        icon: 'pencil alternate',
-        location: "ETLC E2-001",
-        description: "Get a primer on classification as well as SciKit Learn. Great for those interested in AI. Part 1 in a 2 part series."
-    },
-    {
-        title: "Intro to Git",
-        date: "Saturday 1:00pm - Saturday 1:50pm",
-        icon: 'pencil alternate',
-        location: "ETLC E2-002",
-        description: "Highly recommended for anyone who doesn't know git."
-    },
-    {
-        title: "Team Finding Workshop",
-        date: "Saturday 1:00pm - Saturday 1:50pm",
-        icon: 'pencil alternate',
-        location: "DICE 8-207",
-        description: "For students who don't have teams yet to find a group."
-    },
-    {
-        title: "Natural Language Processing Primer",
-        date: "Saturday 2:00pm - Saturday 3:30pm",
-        location: "ETLC E2-001",
-        icon: 'pencil alternate',
-        description: "Builds off of material covered in the SciKit Learn workshop. Part 2 of the 2 part series."
-    },
-    {
-        title: "Intro to React",
-        date: "Saturday 2:00pm - Saturday 3:30pm",
-        location: "ETLC E2-002",
-        icon: 'pencil alternate',
-        description: "Great primer for anyone who wants to learn about React."
-    },
-    {
-        title: "Intro to Android",
-        date: "Saturday 2:00pm - Saturday 3:30pm",
-        location: "DICE 8-207",
-        icon: 'pencil alternate',
-        description: "Great primer for anyone who wants to learn about Android."
-    },
-    {
-        title: "JavaScript Basics",
-        date: "Saturday 2:00pm - Saturday 3:30pm",
-        location: "ETLC Solarium",
-        icon: 'pencil alternate',
-        description: "Great primer for anyone who wants to learn about JavaScript."
-    },
-    {
-        title: "Pitching a Hackathon",
-        date: "Saturday 3:30pm - Saturday 4:20pm",
-        location: "DICE 8-207",
-        icon: 'pencil alternate',
-        description: "Getting serious about a hack? Learn how to pitch it to judges!"
-    },
-    {
-        title: "How To Not Lose a Billion Dollars",
-        date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "ETLC E2-001",
-        icon: 'pencil alternate',
-        description: "A behind the scenes look of industrial SCADA systems"
-    },
-    {
-        title: "Realtime Traffic Sign Detection Using YOLO",
-        date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "ETLC E2-002",
-        icon: 'pencil alternate',
-    },
-    {
-        title: "Introduction to Rx Java",
-        date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "DICE 8-207",
-        icon: 'pencil alternate',
-    },
-    {
-        title: "Coding Quality",
-        date: "Saturday 4:30pm - Saturday 6:00pm",
-        location: "ETLC Solarium",
-        icon: 'pencil alternate',
-    },
+    // {
+    //     title: "SciKit Learn Workshop",
+    //     date: "Saturday 1:00pm - Saturday 1:50pm",
+    //     icon: 'pencil alternate',
+    //     location: "ETLC E2-001",
+    //     description: "Get a primer on classification as well as SciKit Learn. Great for those interested in AI. Part 1 in a 2 part series."
+    // },
+    // {
+    //     title: "Intro to Git",
+    //     date: "Saturday 1:00pm - Saturday 1:50pm",
+    //     icon: 'pencil alternate',
+    //     location: "ETLC E2-002",
+    //     description: "Highly recommended for anyone who doesn't know git."
+    // },
+    // {
+    //     title: "Team Finding Workshop",
+    //     date: "Saturday 1:00pm - Saturday 1:50pm",
+    //     icon: 'pencil alternate',
+    //     location: "DICE 8-207",
+    //     description: "For students who don't have teams yet to find a group."
+    // },
+    // {
+    //     title: "Natural Language Processing Primer",
+    //     date: "Saturday 2:00pm - Saturday 3:30pm",
+    //     location: "ETLC E2-001",
+    //     icon: 'pencil alternate',
+    //     description: "Builds off of material covered in the SciKit Learn workshop. Part 2 of the 2 part series."
+    // },
+    // {
+    //     title: "Intro to React",
+    //     date: "Saturday 2:00pm - Saturday 3:30pm",
+    //     location: "ETLC E2-002",
+    //     icon: 'pencil alternate',
+    //     description: "Great primer for anyone who wants to learn about React."
+    // },
+    // {
+    //     title: "Intro to Android",
+    //     date: "Saturday 2:00pm - Saturday 3:30pm",
+    //     location: "DICE 8-207",
+    //     icon: 'pencil alternate',
+    //     description: "Great primer for anyone who wants to learn about Android."
+    // },
+    // {
+    //     title: "JavaScript Basics",
+    //     date: "Saturday 2:00pm - Saturday 3:30pm",
+    //     location: "ETLC Solarium",
+    //     icon: 'pencil alternate',
+    //     description: "Great primer for anyone who wants to learn about JavaScript."
+    // },
+    // {
+    //     title: "Pitching a Hackathon",
+    //     date: "Saturday 3:30pm - Saturday 4:20pm",
+    //     location: "DICE 8-207",
+    //     icon: 'pencil alternate',
+    //     description: "Getting serious about a hack? Learn how to pitch it to judges!"
+    // },
+    // {
+    //     title: "How To Not Lose a Billion Dollars",
+    //     date: "Saturday 4:30pm - Saturday 6:00pm",
+    //     location: "ETLC E2-001",
+    //     icon: 'pencil alternate',
+    //     description: "A behind the scenes look of industrial SCADA systems"
+    // },
+    // {
+    //     title: "Realtime Traffic Sign Detection Using YOLO",
+    //     date: "Saturday 4:30pm - Saturday 6:00pm",
+    //     location: "ETLC E2-002",
+    //     icon: 'pencil alternate',
+    // },
+    // {
+    //     title: "Introduction to Rx Java",
+    //     date: "Saturday 4:30pm - Saturday 6:00pm",
+    //     location: "DICE 8-207",
+    //     icon: 'pencil alternate',
+    // },
+    // {
+    //     title: "Coding Quality",
+    //     date: "Saturday 4:30pm - Saturday 6:00pm",
+    //     location: "ETLC Solarium",
+    //     icon: 'pencil alternate',
+    // },
     {
         title: "Dinner",
         date: "Saturday 5:30pm",
         icon: 'food'
     },
+    // {
+    //     title: "Hardware Debugging - Tips & Tricks",
+    //     date: "Saturday 8:00pm - Saturday 9:30pm",
+    //     location: "ETLC E2-001",
+    //     icon: 'pencil alternate',
+    //     description: "An example driven conversation about how to approach embedded debugging and creative problem solving"
+    // },
+    // {
+    //     title: "Open Data and API Endpoints For your Apps",
+    //     date: "Saturday 8:00pm - Saturday 9:30pm",
+    //     location: "ETLC E2-002",
+    //     icon: 'pencil alternate'
+    // },
+    // {
+    //     title: "Intro to Docker",
+    //     date: "Saturday 8:00pm - Saturday 9:30pm",
+    //     location: "DICE 8-207",
+    //     icon: 'pencil alternate'
+    // },
+    // {
+    //     title: "Design for Delight",
+    //     date: "Saturday 8:00pm - Saturday 9:30pm",
+    //     location: "ETLC Solarium",
+    //     icon: 'pencil alternate'
+    // },
+    // {
+    //     title: "MLH Cup Stacking",
+    //     date: "Saturday 9:00pm",
+    //     location: "ETLC Solarium",
+    //     icon: 'gamepad'
+    // },
     {
-        title: "Hardware Debugging - Tips & Tricks",
-        date: "Saturday 8:00pm - Saturday 9:30pm",
-        location: "ETLC E2-001",
-        icon: 'pencil alternate',
-        description: "An example driven conversation about how to approach embedded debugging and creative problem solving"
+        fullDate: "January 19, 2020 (Sunday)"
     },
-    {
-        title: "Open Data and API Endpoints For your Apps",
-        date: "Saturday 8:00pm - Saturday 9:30pm",
-        location: "ETLC E2-002",
-        icon: 'pencil alternate'
-    },
-    {
-        title: "Intro to Docker",
-        date: "Saturday 8:00pm - Saturday 9:30pm",
-        location: "DICE 8-207",
-        icon: 'pencil alternate'
-    },
-    {
-        title: "Design for Delight",
-        date: "Saturday 8:00pm - Saturday 9:30pm",
-        location: "ETLC Solarium",
-        icon: 'pencil alternate'
-    },
-    {
-        title: "MLH Cup Stacking",
-        date: "Saturday 9:00pm",
-        location: "ETLC Solarium",
-        icon: 'gamepad'
-    },
-    {
-        fullDate: "January 20, 2019 (Sunday)"
-    },
-    {
-        title: "Ice Cream Sundays Presented by Intuit",
-        date: "Sunday 12:00am",
-        icon: 'food'
-    },
+    // {
+    //     title: "Ice Cream Sundays Presented by Intuit",
+    //     date: "Sunday 12:00am",
+    //     icon: 'food'
+    // },
     {
         title: "Breakfast Is Served",
         date: "Sunday 7:30am",

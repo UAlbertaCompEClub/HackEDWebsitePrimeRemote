@@ -21,12 +21,12 @@ class About extends Component {
                 </Container>
                 <Container>
                     <h2>WE GOT YOU</h2>
-                    <p>To help your journey, we take care of the details. HackED 2018 features more food, more space, more prizes and more swag. We provide you with three meals and a ton of snacks to power you through your hack. We’re expanding into the eighth floor of Donadeo ICE to give your team more room to think and collaborate. We’re spending over $1k on prizes, split between winning at the end, trivia throughout the night and some surprises too. And this year, we’re releasing custom HackED T-shirts for the first time in HackED history.</p>
+                    <p>To help your journey, we take care of the details. HackED 2020 features more food, more space, more prizes and more swag. We provide you with three meals and a ton of snacks to power you through your hack. We’re expanding into the eighth floor of Donadeo ICE to give your team more room to think and collaborate. We’re spending over $1k on prizes, split between winning at the end, trivia throughout the night and some surprises too. And this year, we’re releasing custom HackED T-shirts for the first time in HackED history.</p>
                     <br/>
                 </Container>
                 <Container>
                     <h2>BRING IT</h2>
-                    <p>Join us over the weekend of January 19 to hack your way to something new, whether you’re learning to code for the first time or flexing your hacking muscle trying to build the next big thing. Bring on the challenge, bring your ideas to life.</p>
+                    <p>Join us over the weekend of January 18 to hack your way to something new, whether you’re learning to code for the first time or flexing your hacking muscle trying to build the next big thing. Bring on the challenge, bring your ideas to life.</p>
                     <br/>
                 </Container>
             </div>

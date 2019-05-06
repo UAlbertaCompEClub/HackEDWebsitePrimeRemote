@@ -46,7 +46,7 @@ const generalPanels = [
     {
       key: 'do-i-have-to-be-compe',
       title: 'Do I have to be in Computer Engineering/Computer Science to participate in this hackathon?',
-      content: 'Not at all! Any students interested in participating, regardless of skill, faculty or school is welcome to join.'
+      content: 'Not at all! Any student interested in participating, regardless of skill, faculty or school is welcome to join.'
     },
     {
       key: 'hows-wifi',
@@ -102,7 +102,7 @@ const generalPanels = [
     {
       key: 'where-do-i-apply',
       title: 'Where do I apply?',
-      content: 'HERE!! https://www.eventbrite.ca/e/hacked-2019-tickets-52785383503'
+      content: 'TBD'
     },
     {
       key: 'when-is-the-deadline',
@@ -121,7 +121,7 @@ const generalPanels = [
       },
       {
         key: 'reimburse-travel',
-        title: 'Will i be reimbursed travel expenses?',
+        title: 'Will I be reimbursed travel expenses?',
         content: "Unfortunately, HackED will not be reimbursing travel expenses this year.",
       }
   ]
@@ -170,7 +170,7 @@ const generalPanels = [
       key: 'can-i-volunteer',
       title: 'Can I volunteer instead?',
       content: [
-            'Of course! All help will be throughly appreciated. Reach out to us at at hacked@compeclub.com or fill out this form https://docs.google.com/forms/d/e/1FAIpQLScLH936Ut2-lLYn7iGQkLk4tGyq8iKvezEddD3D8l_QDSLGdw/viewform'
+            'Of course! All help will be throughly appreciated. Reach out to us at at hacked@compeclub.com or fill out this form TBD'
         ].join(' '),
     },
     {

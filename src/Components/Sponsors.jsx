@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import { Grid, Image, Divider } from 'semantic-ui-react'
 
+import PlaceholderLogo from '../logos/Placeholder.png'
+
 import IntuitLogo from '../logos/Intuit.png'
 
 import StartupEdmontonLogo from '../logos/StartupEdmonton.png'
@@ -43,7 +45,7 @@ class Sponsors extends Component {
                 <Grid.Row verticalAlign='middle' centered>
                     <Grid.Column>
                         <Image
-                            src={IntuitLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.intuit.com/'
@@ -54,7 +56,7 @@ class Sponsors extends Component {
                 <Grid.Row verticalAlign='middle' centered>
                     <Grid.Column>
                         <Image
-                            src={ServusLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.servus.ca/life'
@@ -62,7 +64,7 @@ class Sponsors extends Component {
                     </Grid.Column>
                     <Grid.Column>
                         <Image
-                            src={StartupEdmontonLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.startupedmonton.com/'
@@ -70,7 +72,7 @@ class Sponsors extends Component {
                     </Grid.Column>
                     <Grid.Column>
                         <Image
-                            src={WillowglenLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.willowglensystems.com/'
@@ -78,7 +80,7 @@ class Sponsors extends Component {
                     </Grid.Column>
                     <Grid.Column>
                         <Image
-                            src={DevFactoLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.devfacto.com/'
@@ -86,7 +88,7 @@ class Sponsors extends Component {
                     </Grid.Column>
                     <Grid.Column>
                         <Image
-                            src={CityOfEdmontonLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.edmonton.ca/'
@@ -94,7 +96,7 @@ class Sponsors extends Component {
                     </Grid.Column>
                     <Grid.Column>
                         <Image
-                            src={TelusLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.telus.com/en/'
@@ -105,7 +107,7 @@ class Sponsors extends Component {
                 <Grid.Row verticalAlign='middle' centered>
                     <Grid.Column>
                         <Image
-                            src={JobberLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://getjobber.com/'
@@ -113,7 +115,7 @@ class Sponsors extends Component {
                     </Grid.Column>
                     <Grid.Column>
                         <Image
-                            src={ThePodLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.pod-innovation.ca/'
@@ -121,7 +123,7 @@ class Sponsors extends Component {
                     </Grid.Column>
                     <Grid.Column>
                         <Image
-                            src={AmiiLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.amii.ca/'
@@ -129,7 +131,7 @@ class Sponsors extends Component {
                     </Grid.Column>
                     <Grid.Column>
                         <Image
-                            src={FacultyOfEngineeringLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.ualberta.ca/electrical-computer-engineering'
@@ -140,7 +142,7 @@ class Sponsors extends Component {
                 <Grid.Row verticalAlign='middle' centered>
                     <Grid.Column>
                         <Image
-                            src={StickerMuleLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='http://hackp.ac/mlh-stickermule-hackathons'
@@ -151,7 +153,7 @@ class Sponsors extends Component {
                 <Grid.Row verticalAlign='middle' centered>
                     <Grid.Column>
                         <Image
-                            src={BrandMakersLogo}
+                            src={PlaceholderLogo}
                             fluid
                             as='a'
                             href='https://www.brandmakers.com/'
