@@ -32,7 +32,7 @@ class App extends Component {
               <br></br>
               <br></br>
               <h2>Alberta's Largest Student Run Hackathon</h2>
-              <h3>January 19 - 20 @ The Donadeo Innovation Centre for Engineering</h3>
+              <h3>January 18 - 19 @ The Donadeo Innovation Centre for Engineering</h3>
               <Button onClick={(e) => this.redirectToExternalUrl('https://www.eventbrite.ca/e/hacked-2019-tickets-52785383503', e)} color='hackedred' size='huge'>Register Here!</Button>
               <Button onClick={(e) => this.redirectToExternalUrl('https://docs.google.com/forms/d/e/1FAIpQLScLH936Ut2-lLYn7iGQkLk4tGyq8iKvezEddD3D8l_QDSLGdw/viewform', e)} color='hackedred' size='huge'>Volunteer Here!</Button>
               <Button onClick={(e) => this.redirectToExternalUrl('https://docs.google.com/forms/d/e/1FAIpQLSefcoKHHs-TQd9AHdF_b1lKlyzXUdOPS0M7jUEwGds77cZo6A/viewform', e)} color='hackedred' size='huge'>Mentor Here!</Button>
