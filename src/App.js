@@ -33,9 +33,9 @@ class App extends Component {
               <br></br>
               <h2>Alberta's Largest Student Run Hackathon</h2>
               <h3>January 18 - 19 @ The Donadeo Innovation Centre for Engineering</h3>
-              <Button onClick={(e) => this.redirectToExternalUrl('https://docs.google.com/forms/d/e/1FAIpQLSer_0IBKa5O0EFz4uLUtYa6tA5AqZcTpAFgfOxytpPU80HRoQ/viewform', e)} color='hackedred' size='huge'>Pre-Register Here!</Button>
-              <Button onClick={(e) => this.redirectToExternalUrl('https://docs.google.com/forms/d/e/1FAIpQLScM3ggG6FtYT0prlH5F4p892FNoMFG_zgeela8HM2MTNoLXNA/viewform', e)} color='hackedred' size='huge'>Volunteer Here!</Button>
-              <Button onClick={(e) => this.redirectToExternalUrl('https://docs.google.com/forms/d/e/1FAIpQLSeDlrVsFObjqKottNynGyRhRkxc7tehxwqMYy1T4QNTb9jSlQ/viewform', e)} color='hackedred' size='huge'>Mentor Here!</Button>
+              <Button onClick={(e) => this.redirectToExternalUrl('https://docs.google.com/forms/d/e/1FAIpQLSer_0IBKa5O0EFz4uLUtYa6tA5AqZcTpAFgfOxytpPU80HRoQ/viewform', e)} color='red' size='huge'>Pre-Register Here!</Button>
+              <Button onClick={(e) => this.redirectToExternalUrl('https://docs.google.com/forms/d/e/1FAIpQLScM3ggG6FtYT0prlH5F4p892FNoMFG_zgeela8HM2MTNoLXNA/viewform', e)} color='red' size='huge'>Volunteer Here!</Button>
+              <Button onClick={(e) => this.redirectToExternalUrl('https://docs.google.com/forms/d/e/1FAIpQLSeDlrVsFObjqKottNynGyRhRkxc7tehxwqMYy1T4QNTb9jSlQ/viewform', e)} color='red' size='huge'>Mentor Here!</Button>
             </Grid.Column>
           </Grid.Row>
         </Grid>

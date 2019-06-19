@@ -169,9 +169,10 @@ const generalPanels = [
     {
       key: 'can-i-volunteer',
       title: 'Can I volunteer instead?',
-      content: [
-            'Of course! All help is throughly appreciated. Reach out to us at at hacked@compeclub.com or fill out ',
-            <a class='whiteLink' target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScM3ggG6FtYT0prlH5F4p892FNoMFG_zgeela8HM2MTNoLXNA/viewform">this form.</a>
+      content: 
+        [
+            <span key='volunteer-text'>'Of course! All help is throughly appreciated. Reach out to us at at hacked@compeclub.com or fill out </span>,
+            <a key='volunteer-link' className='whiteLink' href="https://docs.google.com/forms/d/e/1FAIpQLScM3ggG6FtYT0prlH5F4p892FNoMFG_zgeela8HM2MTNoLXNA/viewform">this form.</a>
         ],
     },
     {
