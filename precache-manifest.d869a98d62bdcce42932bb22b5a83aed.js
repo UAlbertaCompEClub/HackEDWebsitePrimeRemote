@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ea3e701b5bce01174ce78f5e8e29d3d",
+    "revision": "59405e5d18fad5d9303d674035fea2bf",
     "url": "/index.html"
   },
   {
-    "revision": "24a00bfea1f78cb56cab",
-    "url": "/static/css/2.621b5bde.chunk.css"
+    "revision": "7544758e0d1a63e39e29",
+    "url": "/static/css/2.c4b83ee6.chunk.css"
   },
   {
-    "revision": "721348c2b63cd4df555a",
-    "url": "/static/css/main.74b1b500.chunk.css"
+    "revision": "1514a5a319a8fb8ddbe5",
+    "url": "/static/css/main.dea632ec.chunk.css"
   },
   {
-    "revision": "24a00bfea1f78cb56cab",
-    "url": "/static/js/2.fd92d399.chunk.js"
+    "revision": "7544758e0d1a63e39e29",
+    "url": "/static/js/2.052f0082.chunk.js"
   },
   {
-    "revision": "721348c2b63cd4df555a",
-    "url": "/static/js/main.e895864d.chunk.js"
+    "revision": "f7e31ec99351775cb9ca1af26fdd0e5b",
+    "url": "/static/js/2.052f0082.chunk.js.LICENSE"
   },
   {
-    "revision": "5a8c2f52c13e5da62a7a",
-    "url": "/static/js/runtime~main.d27b2669.js"
+    "revision": "1514a5a319a8fb8ddbe5",
+    "url": "/static/js/main.abb9b201.chunk.js"
+  },
+  {
+    "revision": "d8f91c54c992fb3c1838",
+    "url": "/static/js/runtime-main.df64ee12.js"
   },
   {
     "revision": "e2f07f785a4cc283f18bcb489efb7c92",
@@ -32,24 +36,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/BrandMakers.9eec68a9.png"
   },
   {
-    "revision": "4e0c304f894934d7c6dd7e64bb757e78",
-    "url": "/static/media/CityOfEdmonton.4e0c304f.png"
+    "revision": "5f8da8a0ce2114dcb7c437132747db68",
+    "url": "/static/media/CWB.5f8da8a0.png"
   },
   {
-    "revision": "63739d0759522d9b27f11be1c4d15d7d",
-    "url": "/static/media/DevFacto.63739d07.png"
+    "revision": "3b1a7fd87b40a990973f1dad0a56a2b5",
+    "url": "/static/media/DarkhorseAnalytics.3b1a7fd8.png"
   },
   {
-    "revision": "15c8062d4e209429f1eedb8fe9528206",
-    "url": "/static/media/FacultyOfEngineering.15c8062d.jpg"
+    "revision": "6fecb71258b52a406ea09c8af1d4c41e",
+    "url": "/static/media/HackED.6fecb712.svg"
   },
   {
-    "revision": "e441ca768f1004985358d33c15c48695",
-    "url": "/static/media/HackED.e441ca76.png"
-  },
-  {
-    "revision": "359e7a424dc5d7534848d5a414bfffab",
-    "url": "/static/media/Jobber.359e7a42.jpg"
+    "revision": "0aa2196b5f86a7758d53bc5e2e2a6302",
+    "url": "/static/media/InterDynamix.0aa2196b.jpg"
   },
   {
     "revision": "0db5e6cc3f0fec7c59f4ee6b6a6d2933",
@@ -64,20 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/StickerMule.037f4766.png"
   },
   {
-    "revision": "0d506e0ed96895ee3e5f23dd557dae85",
-    "url": "/static/media/Telus.0d506e0e.JPG"
-  },
-  {
     "revision": "1bf0d3371651062f401c2a335b8cbd10",
     "url": "/static/media/ThePod.1bf0d337.png"
-  },
-  {
-    "revision": "5552667d1d89d4a3c48cd968e1333b7a",
-    "url": "/static/media/V2.5552667d.png"
-  },
-  {
-    "revision": "a2ab4acbf16bb12327f308326ba90282",
-    "url": "/static/media/WillowglenSystems.a2ab4acb.jpg"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
