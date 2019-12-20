@@ -1,29 +1,30 @@
 {
   "files": {
     "main.css": "/static/css/main.dea632ec.chunk.css",
-    "main.js": "/static/js/main.abb9b201.chunk.js",
-    "main.js.map": "/static/js/main.abb9b201.chunk.js.map",
+    "main.js": "/static/js/main.e107fa66.chunk.js",
+    "main.js.map": "/static/js/main.e107fa66.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.df64ee12.js",
     "runtime-main.js.map": "/static/js/runtime-main.df64ee12.js.map",
     "static/css/2.c4b83ee6.chunk.css": "/static/css/2.c4b83ee6.chunk.css",
     "static/js/2.052f0082.chunk.js": "/static/js/2.052f0082.chunk.js",
     "static/js/2.052f0082.chunk.js.map": "/static/js/2.052f0082.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d869a98d62bdcce42932bb22b5a83aed.js": "/precache-manifest.d869a98d62bdcce42932bb22b5a83aed.js",
+    "precache-manifest.bba3032210e2b155ea9f3411c0d796aa.js": "/precache-manifest.bba3032210e2b155ea9f3411c0d796aa.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.c4b83ee6.chunk.css.map": "/static/css/2.c4b83ee6.chunk.css.map",
     "static/css/main.dea632ec.chunk.css.map": "/static/css/main.dea632ec.chunk.css.map",
     "static/js/2.052f0082.chunk.js.LICENSE": "/static/js/2.052f0082.chunk.js.LICENSE",
     "static/media/Amii.png": "/static/media/Amii.e2f07f78.png",
     "static/media/BrandMakers.png": "/static/media/BrandMakers.9eec68a9.png",
-    "static/media/CWB.png": "/static/media/CWB.5f8da8a0.png",
+    "static/media/CWB.png": "/static/media/CWB.f6dcfb3c.png",
     "static/media/DarkhorseAnalytics.png": "/static/media/DarkhorseAnalytics.3b1a7fd8.png",
+    "static/media/DrugBank.svg": "/static/media/DrugBank.fcda79fc.svg",
     "static/media/HackED.svg": "/static/media/HackED.6fecb712.svg",
-    "static/media/InterDynamix.jpg": "/static/media/InterDynamix.0aa2196b.jpg",
+    "static/media/InterDynamix.svg": "/static/media/InterDynamix.f34d2398.svg",
     "static/media/Servus.jpg": "/static/media/Servus.0db5e6cc.jpg",
     "static/media/StartupEdmonton.png": "/static/media/StartupEdmonton.a196f615.png",
     "static/media/StickerMule.png": "/static/media/StickerMule.037f4766.png",
-    "static/media/ThePod.png": "/static/media/ThePod.1bf0d337.png",
+    "static/media/ThePod.png": "/static/media/ThePod.96cd37a3.png",
     "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
@@ -31,6 +32,6 @@
     "static/css/2.c4b83ee6.chunk.css",
     "static/js/2.052f0082.chunk.js",
     "static/css/main.dea632ec.chunk.css",
-    "static/js/main.abb9b201.chunk.js"
+    "static/js/main.e107fa66.chunk.js"
   ]
 }

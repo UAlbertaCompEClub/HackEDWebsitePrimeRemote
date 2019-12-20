@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59405e5d18fad5d9303d674035fea2bf",
+    "revision": "3dae52132b3b9bde31ea64a56c29001c",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.c4b83ee6.chunk.css"
   },
   {
-    "revision": "1514a5a319a8fb8ddbe5",
+    "revision": "9df48a24275ece87b234",
     "url": "/static/css/main.dea632ec.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.052f0082.chunk.js.LICENSE"
   },
   {
-    "revision": "1514a5a319a8fb8ddbe5",
-    "url": "/static/js/main.abb9b201.chunk.js"
+    "revision": "9df48a24275ece87b234",
+    "url": "/static/js/main.e107fa66.chunk.js"
   },
   {
     "revision": "d8f91c54c992fb3c1838",
@@ -36,20 +36,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/BrandMakers.9eec68a9.png"
   },
   {
-    "revision": "5f8da8a0ce2114dcb7c437132747db68",
-    "url": "/static/media/CWB.5f8da8a0.png"
+    "revision": "f6dcfb3c92c95fd3af455ff21e756dca",
+    "url": "/static/media/CWB.f6dcfb3c.png"
   },
   {
     "revision": "3b1a7fd87b40a990973f1dad0a56a2b5",
     "url": "/static/media/DarkhorseAnalytics.3b1a7fd8.png"
   },
   {
+    "revision": "fcda79fc396c56cfe7cbe8b47386d8c7",
+    "url": "/static/media/DrugBank.fcda79fc.svg"
+  },
+  {
     "revision": "6fecb71258b52a406ea09c8af1d4c41e",
     "url": "/static/media/HackED.6fecb712.svg"
   },
   {
-    "revision": "0aa2196b5f86a7758d53bc5e2e2a6302",
-    "url": "/static/media/InterDynamix.0aa2196b.jpg"
+    "revision": "f34d23984d37b112471f73eb1f237e42",
+    "url": "/static/media/InterDynamix.f34d2398.svg"
   },
   {
     "revision": "0db5e6cc3f0fec7c59f4ee6b6a6d2933",
@@ -64,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/StickerMule.037f4766.png"
   },
   {
-    "revision": "1bf0d3371651062f401c2a335b8cbd10",
-    "url": "/static/media/ThePod.1bf0d337.png"
+    "revision": "96cd37a3ae11fdab37cde52ce6d95b44",
+    "url": "/static/media/ThePod.96cd37a3.png"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
