@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.74b1b500.chunk.css",
-    "main.js": "/static/js/main.c58e82ac.chunk.js",
-    "main.js.map": "/static/js/main.c58e82ac.chunk.js.map",
+    "main.css": "/static/css/main.c6cc0924.chunk.css",
+    "main.js": "/static/js/main.de44f6b8.chunk.js",
+    "main.js.map": "/static/js/main.de44f6b8.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.d27b2669.js",
     "runtime~main.js.map": "/static/js/runtime~main.d27b2669.js.map",
     "static/css/2.621b5bde.chunk.css": "/static/css/2.621b5bde.chunk.css",
-    "static/js/2.32ef8d2d.chunk.js": "/static/js/2.32ef8d2d.chunk.js",
-    "static/js/2.32ef8d2d.chunk.js.map": "/static/js/2.32ef8d2d.chunk.js.map",
+    "static/js/2.a29eadd2.chunk.js": "/static/js/2.a29eadd2.chunk.js",
+    "static/js/2.a29eadd2.chunk.js.map": "/static/js/2.a29eadd2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2060eeb5fd32b06c5d40441e266b304d.js": "/precache-manifest.2060eeb5fd32b06c5d40441e266b304d.js",
+    "precache-manifest.45381b1af5ec06f4911cef07cdbe54e1.js": "/precache-manifest.45381b1af5ec06f4911cef07cdbe54e1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.621b5bde.chunk.css.map": "/static/css/2.621b5bde.chunk.css.map",
-    "static/css/main.74b1b500.chunk.css.map": "/static/css/main.74b1b500.chunk.css.map",
+    "static/css/main.c6cc0924.chunk.css.map": "/static/css/main.c6cc0924.chunk.css.map",
     "static/media/Amii.png": "/static/media/Amii.e2f07f78.png",
     "static/media/BrandMakers.png": "/static/media/BrandMakers.9eec68a9.png",
     "static/media/CWB.png": "/static/media/CWB.f6dcfb3c.png",
@@ -26,7 +26,6 @@
     "static/media/StartupEdmonton.png": "/static/media/StartupEdmonton.a196f615.png",
     "static/media/StickerMule.png": "/static/media/StickerMule.037f4766.png",
     "static/media/ThePod.png": "/static/media/ThePod.96cd37a3.png",
-    "static/media/V2.png": "/static/media/V2.18090172.png",
     "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff"
   }
 }
