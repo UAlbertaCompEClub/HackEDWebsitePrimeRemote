@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/HackEDWebsiteBetaPage/static/css/main.0fe45484.chunk.css",
-    "main.js": "/HackEDWebsiteBetaPage/static/js/main.21fcb6a1.chunk.js",
-    "main.js.map": "/HackEDWebsiteBetaPage/static/js/main.21fcb6a1.chunk.js.map",
+    "main.js": "/HackEDWebsiteBetaPage/static/js/main.e2915345.chunk.js",
+    "main.js.map": "/HackEDWebsiteBetaPage/static/js/main.e2915345.chunk.js.map",
     "runtime-main.js": "/HackEDWebsiteBetaPage/static/js/runtime-main.7f39bf0d.js",
     "runtime-main.js.map": "/HackEDWebsiteBetaPage/static/js/runtime-main.7f39bf0d.js.map",
     "static/css/2.bfdde5bf.chunk.css": "/HackEDWebsiteBetaPage/static/css/2.bfdde5bf.chunk.css",
-    "static/js/2.ff457b68.chunk.js": "/HackEDWebsiteBetaPage/static/js/2.ff457b68.chunk.js",
-    "static/js/2.ff457b68.chunk.js.map": "/HackEDWebsiteBetaPage/static/js/2.ff457b68.chunk.js.map",
+    "static/js/2.966c0fec.chunk.js": "/HackEDWebsiteBetaPage/static/js/2.966c0fec.chunk.js",
+    "static/js/2.966c0fec.chunk.js.map": "/HackEDWebsiteBetaPage/static/js/2.966c0fec.chunk.js.map",
     "index.html": "/HackEDWebsiteBetaPage/index.html",
-    "precache-manifest.b90cfebb0ddc80309b9c0b8ee80a2f59.js": "/HackEDWebsiteBetaPage/precache-manifest.b90cfebb0ddc80309b9c0b8ee80a2f59.js",
+    "precache-manifest.79749e66cd5d6cb6bdd4dc2085530a61.js": "/HackEDWebsiteBetaPage/precache-manifest.79749e66cd5d6cb6bdd4dc2085530a61.js",
     "service-worker.js": "/HackEDWebsiteBetaPage/service-worker.js",
     "static/css/2.bfdde5bf.chunk.css.map": "/HackEDWebsiteBetaPage/static/css/2.bfdde5bf.chunk.css.map",
     "static/css/main.0fe45484.chunk.css.map": "/HackEDWebsiteBetaPage/static/css/main.0fe45484.chunk.css.map",
-    "static/js/2.ff457b68.chunk.js.LICENSE": "/HackEDWebsiteBetaPage/static/js/2.ff457b68.chunk.js.LICENSE",
+    "static/js/2.966c0fec.chunk.js.LICENSE": "/HackEDWebsiteBetaPage/static/js/2.966c0fec.chunk.js.LICENSE",
     "static/media/Amii.png": "/HackEDWebsiteBetaPage/static/media/Amii.e2f07f78.png",
     "static/media/BrandMakers.png": "/HackEDWebsiteBetaPage/static/media/BrandMakers.9eec68a9.png",
     "static/media/CWB.png": "/HackEDWebsiteBetaPage/static/media/CWB.f6dcfb3c.png",
@@ -33,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.7f39bf0d.js",
     "static/css/2.bfdde5bf.chunk.css",
-    "static/js/2.ff457b68.chunk.js",
+    "static/js/2.966c0fec.chunk.js",
     "static/css/main.0fe45484.chunk.css",
-    "static/js/main.21fcb6a1.chunk.js"
+    "static/js/main.e2915345.chunk.js"
   ]
 }

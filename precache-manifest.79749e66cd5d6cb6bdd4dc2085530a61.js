@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1b65605c1bc9a1395919a093d651164",
+    "revision": "3c3c4baa79967fefb6e13bce39916419",
     "url": "/HackEDWebsiteBetaPage/index.html"
   },
   {
-    "revision": "4de7c30842a593d6ff6e",
+    "revision": "0ad1c3262f6e748d71f8",
     "url": "/HackEDWebsiteBetaPage/static/css/2.bfdde5bf.chunk.css"
   },
   {
-    "revision": "fb2720643bd6c8b7314a",
+    "revision": "01513e828c3e8c356773",
     "url": "/HackEDWebsiteBetaPage/static/css/main.0fe45484.chunk.css"
   },
   {
-    "revision": "4de7c30842a593d6ff6e",
-    "url": "/HackEDWebsiteBetaPage/static/js/2.ff457b68.chunk.js"
+    "revision": "0ad1c3262f6e748d71f8",
+    "url": "/HackEDWebsiteBetaPage/static/js/2.966c0fec.chunk.js"
   },
   {
     "revision": "f7e31ec99351775cb9ca1af26fdd0e5b",
-    "url": "/HackEDWebsiteBetaPage/static/js/2.ff457b68.chunk.js.LICENSE"
+    "url": "/HackEDWebsiteBetaPage/static/js/2.966c0fec.chunk.js.LICENSE"
   },
   {
-    "revision": "fb2720643bd6c8b7314a",
-    "url": "/HackEDWebsiteBetaPage/static/js/main.21fcb6a1.chunk.js"
+    "revision": "01513e828c3e8c356773",
+    "url": "/HackEDWebsiteBetaPage/static/js/main.e2915345.chunk.js"
   },
   {
     "revision": "b3d8e642deaacaa5ef69",
