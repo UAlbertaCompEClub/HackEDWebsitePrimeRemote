@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.0fe45484.chunk.css",
-    "main.js": "/static/js/main.7473f8d1.chunk.js",
-    "main.js.map": "/static/js/main.7473f8d1.chunk.js.map",
+    "main.js": "/static/js/main.b05d0c16.chunk.js",
+    "main.js.map": "/static/js/main.b05d0c16.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.df64ee12.js",
     "runtime-main.js.map": "/static/js/runtime-main.df64ee12.js.map",
     "static/css/2.c4b83ee6.chunk.css": "/static/css/2.c4b83ee6.chunk.css",
-    "static/js/2.ff457b68.chunk.js": "/static/js/2.ff457b68.chunk.js",
-    "static/js/2.ff457b68.chunk.js.map": "/static/js/2.ff457b68.chunk.js.map",
+    "static/js/2.8e42d8d6.chunk.js": "/static/js/2.8e42d8d6.chunk.js",
+    "static/js/2.8e42d8d6.chunk.js.map": "/static/js/2.8e42d8d6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0c844c5ea47b6aa9720ff80cfabcbdaf.js": "/precache-manifest.0c844c5ea47b6aa9720ff80cfabcbdaf.js",
+    "precache-manifest.3dbff954d2b0d88cf95b9d7f4fc4e2a2.js": "/precache-manifest.3dbff954d2b0d88cf95b9d7f4fc4e2a2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.c4b83ee6.chunk.css.map": "/static/css/2.c4b83ee6.chunk.css.map",
     "static/css/main.0fe45484.chunk.css.map": "/static/css/main.0fe45484.chunk.css.map",
-    "static/js/2.ff457b68.chunk.js.LICENSE": "/static/js/2.ff457b68.chunk.js.LICENSE",
+    "static/js/2.8e42d8d6.chunk.js.LICENSE": "/static/js/2.8e42d8d6.chunk.js.LICENSE",
     "static/media/Amii.png": "/static/media/Amii.e2f07f78.png",
     "static/media/BrandMakers.png": "/static/media/BrandMakers.9eec68a9.png",
     "static/media/CWB.png": "/static/media/CWB.f6dcfb3c.png",
@@ -22,6 +22,7 @@
     "static/media/DrugBank.svg": "/static/media/DrugBank.fcda79fc.svg",
     "static/media/HackED.svg": "/static/media/HackED.c2a4a1fa.svg",
     "static/media/HackEDIntuit.svg": "/static/media/HackEDIntuit.4f6f5f0a.svg",
+    "static/media/ISAIC.jpg": "/static/media/ISAIC.44381c59.jpg",
     "static/media/InterDynamix.svg": "/static/media/InterDynamix.f34d2398.svg",
     "static/media/MissionSystems.jpg": "/static/media/MissionSystems.b29b2acc.jpg",
     "static/media/Servus.jpg": "/static/media/Servus.0db5e6cc.jpg",
@@ -33,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.df64ee12.js",
     "static/css/2.c4b83ee6.chunk.css",
-    "static/js/2.ff457b68.chunk.js",
+    "static/js/2.8e42d8d6.chunk.js",
     "static/css/main.0fe45484.chunk.css",
-    "static/js/main.7473f8d1.chunk.js"
+    "static/js/main.b05d0c16.chunk.js"
   ]
 }
