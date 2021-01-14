@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.0fe45484.chunk.css",
-    "main.js": "/static/js/main.b7a9b474.chunk.js",
-    "main.js.map": "/static/js/main.b7a9b474.chunk.js.map",
+    "main.js": "/static/js/main.8499b66e.chunk.js",
+    "main.js.map": "/static/js/main.8499b66e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.df64ee12.js",
     "runtime-main.js.map": "/static/js/runtime-main.df64ee12.js.map",
     "static/css/2.c4b83ee6.chunk.css": "/static/css/2.c4b83ee6.chunk.css",
     "static/js/2.0409e5dd.chunk.js": "/static/js/2.0409e5dd.chunk.js",
     "static/js/2.0409e5dd.chunk.js.map": "/static/js/2.0409e5dd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.70dfa8c937f6a0bd9197bd304e23ef25.js": "/precache-manifest.70dfa8c937f6a0bd9197bd304e23ef25.js",
+    "precache-manifest.a04530ab157f7603013fc32e5c578c92.js": "/precache-manifest.a04530ab157f7603013fc32e5c578c92.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.c4b83ee6.chunk.css.map": "/static/css/2.c4b83ee6.chunk.css.map",
     "static/css/main.0fe45484.chunk.css.map": "/static/css/main.0fe45484.chunk.css.map",
     "static/js/2.0409e5dd.chunk.js.LICENSE": "/static/js/2.0409e5dd.chunk.js.LICENSE",
-    "static/media/Amii.png": "/static/media/Amii.e2f07f78.png",
+    "static/media/Amii.png": "/static/media/Amii.a97e2459.png",
     "static/media/BrandMakers.png": "/static/media/BrandMakers.9eec68a9.png",
     "static/media/CWB.png": "/static/media/CWB.f6dcfb3c.png",
     "static/media/DarkhorseAnalytics.png": "/static/media/DarkhorseAnalytics.3b1a7fd8.png",
@@ -36,6 +36,6 @@
     "static/css/2.c4b83ee6.chunk.css",
     "static/js/2.0409e5dd.chunk.js",
     "static/css/main.0fe45484.chunk.css",
-    "static/js/main.b7a9b474.chunk.js"
+    "static/js/main.8499b66e.chunk.js"
   ]
 }
