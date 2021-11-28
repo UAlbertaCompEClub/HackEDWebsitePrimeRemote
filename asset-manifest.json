@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0fe45484.chunk.css",
-    "main.js": "/static/js/main.404c473a.chunk.js",
-    "main.js.map": "/static/js/main.404c473a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.df64ee12.js",
-    "runtime-main.js.map": "/static/js/runtime-main.df64ee12.js.map",
-    "static/css/2.c4b83ee6.chunk.css": "/static/css/2.c4b83ee6.chunk.css",
-    "static/js/2.0409e5dd.chunk.js": "/static/js/2.0409e5dd.chunk.js",
-    "static/js/2.0409e5dd.chunk.js.map": "/static/js/2.0409e5dd.chunk.js.map",
+    "main.css": "/static/css/main.79b32923.chunk.css",
+    "main.js": "/static/js/main.4d784433.chunk.js",
+    "main.js.map": "/static/js/main.4d784433.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.6d1260b5.js",
+    "runtime~main.js.map": "/static/js/runtime~main.6d1260b5.js.map",
+    "static/css/2.5067f56b.chunk.css": "/static/css/2.5067f56b.chunk.css",
+    "static/js/2.bbf3dcd1.chunk.js": "/static/js/2.bbf3dcd1.chunk.js",
+    "static/js/2.bbf3dcd1.chunk.js.map": "/static/js/2.bbf3dcd1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.edbe2225bda11e1f218280f0e03ae6f0.js": "/precache-manifest.edbe2225bda11e1f218280f0e03ae6f0.js",
+    "precache-manifest.989a7b7692b6f1fcd39bd1bd9941144b.js": "/precache-manifest.989a7b7692b6f1fcd39bd1bd9941144b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.c4b83ee6.chunk.css.map": "/static/css/2.c4b83ee6.chunk.css.map",
-    "static/css/main.0fe45484.chunk.css.map": "/static/css/main.0fe45484.chunk.css.map",
-    "static/js/2.0409e5dd.chunk.js.LICENSE": "/static/js/2.0409e5dd.chunk.js.LICENSE",
+    "static/css/2.5067f56b.chunk.css.map": "/static/css/2.5067f56b.chunk.css.map",
+    "static/css/main.79b32923.chunk.css.map": "/static/css/main.79b32923.chunk.css.map",
     "static/media/Amii.png": "/static/media/Amii.a97e2459.png",
     "static/media/BrandMakers.png": "/static/media/BrandMakers.9eec68a9.png",
     "static/media/CWB.png": "/static/media/CWB.f6dcfb3c.png",
@@ -30,12 +29,5 @@
     "static/media/StickerMule.png": "/static/media/StickerMule.037f4766.png",
     "static/media/ThePod.png": "/static/media/ThePod.96cd37a3.png",
     "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.df64ee12.js",
-    "static/css/2.c4b83ee6.chunk.css",
-    "static/js/2.0409e5dd.chunk.js",
-    "static/css/main.0fe45484.chunk.css",
-    "static/js/main.404c473a.chunk.js"
-  ]
+  }
 }
