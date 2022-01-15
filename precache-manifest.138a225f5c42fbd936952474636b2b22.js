@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d66a93cd92b9c0ad6ef153470019030",
+    "revision": "d73209e3cf048ba31b7e6bcfd34aafaa",
     "url": "/index.html"
   },
   {
-    "revision": "f52c61700ee815dff2b6",
+    "revision": "482831d05eb3d80bc773",
     "url": "/static/css/2.5067f56b.chunk.css"
   },
   {
-    "revision": "5f99ea6685eba92cc261",
+    "revision": "4a7ac62c77196b3692bd",
     "url": "/static/css/main.79b32923.chunk.css"
   },
   {
-    "revision": "f52c61700ee815dff2b6",
-    "url": "/static/js/2.d359dd5c.chunk.js"
+    "revision": "482831d05eb3d80bc773",
+    "url": "/static/js/2.16d9f8d6.chunk.js"
   },
   {
-    "revision": "5f99ea6685eba92cc261",
-    "url": "/static/js/main.aa38f72c.chunk.js"
+    "revision": "4a7ac62c77196b3692bd",
+    "url": "/static/js/main.bb9e2b14.chunk.js"
   },
   {
     "revision": "111524ff0acd79886eb0",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "44381c59dcfb40b9ab7a230d5b02cc86",
     "url": "/static/media/ISAIC.44381c59.jpg"
+  },
+  {
+    "revision": "b0f79dcdb4d09b69b4745378747fb4ab",
+    "url": "/static/media/InnovateEdmonton.b0f79dcd.png"
   },
   {
     "revision": "b29b2acc29a29ffb030a02b4dd505af8",
