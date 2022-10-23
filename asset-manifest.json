@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.728670ae.css",
-    "main.js": "/static/js/main.207fabe7.js",
+    "main.js": "/static/js/main.bb475711.js",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/static/media/icons.62d9dae4e0040e81c980.svg",
     "static/media/InnovateEdmonton.png": "/static/media/InnovateEdmonton.4a9c0a90297ad5744bad.png",
@@ -33,10 +33,10 @@
     "static/media/HackED.svg": "/static/media/HackED.f0f05dd7d5cabeb5e70f4086f9ead281.svg",
     "index.html": "/index.html",
     "main.728670ae.css.map": "/static/css/main.728670ae.css.map",
-    "main.207fabe7.js.map": "/static/js/main.207fabe7.js.map"
+    "main.bb475711.js.map": "/static/js/main.bb475711.js.map"
   },
   "entrypoints": [
     "static/css/main.728670ae.css",
-    "static/js/main.207fabe7.js"
+    "static/js/main.bb475711.js"
   ]
 }
