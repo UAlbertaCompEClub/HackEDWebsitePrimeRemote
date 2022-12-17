@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.e16e351f.css",
-    "main.js": "/static/js/main.23b2a473.js",
+    "main.js": "/static/js/main.2a2cdc52.js",
     "static/media/HackedLogo.png": "/static/media/HackedLogo.bb2dd67d70e1f254d349.png",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/icons.svg": "/static/media/icons.62d9dae4e0040e81c980.svg",
     "static/media/InnovateEdmonton.png": "/static/media/InnovateEdmonton.4a9c0a90297ad5744bad.png",
     "static/media/Servus.jpg": "/static/media/Servus.87b785a532f7972d63a7.jpg",
+    "static/media/DarkhorseAnalytics.png": "/static/media/DarkhorseAnalytics.5db9cbf993176b022ace.png",
     "static/media/MissionSystems.jpg": "/static/media/MissionSystems.b63b197bb848d7bfaf8b.jpg",
     "static/media/outline-icons.svg": "/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
     "static/media/icons.eot": "/static/media/icons.a01e3f2d6c83dc3aee17.eot",
@@ -15,7 +16,6 @@
     "static/media/brand-icons.ttf": "/static/media/brand-icons.65a2fb6d9aaa164b41a0.ttf",
     "static/media/G2V.png": "/static/media/G2V.6c252b149b9129722733.png",
     "static/media/brand-icons.woff": "/static/media/brand-icons.cac87dc00c87a5d74711.woff",
-    "static/media/DarkhorseAnalytics.png": "/static/media/DarkhorseAnalytics.8402c613bb43759625ca.png",
     "static/media/Nvent.png": "/static/media/Nvent.12c2f93bdc7997169344.png",
     "static/media/brand-icons.woff2": "/static/media/brand-icons.278156e41e0ad908cf7f.woff2",
     "static/media/SpartanControls.jpg": "/static/media/SpartanControls.517409682767fa77dd44.jpg",
@@ -28,6 +28,7 @@
     "static/media/outline-icons.ttf": "/static/media/outline-icons.5367103510b27b784827.ttf",
     "static/media/OnePassword.png": "/static/media/OnePassword.4546ab8d7aee5c189886.png",
     "static/media/flags.png": "/static/media/flags.99f63ae7a743f21ab308.png",
+    "static/media/Intuit.png": "/static/media/Intuit.0cb317c9e233dfbb9a45.png",
     "static/media/Amii.png": "/static/media/Amii.ca164f9c31949deffde7.png",
     "static/media/StickerMule.png": "/static/media/StickerMule.d1ad4fc4d53ca6d0a495.png",
     "static/media/BrandMakers.png": "/static/media/BrandMakers.974c57cfe7bce521eeef.png",
@@ -37,10 +38,10 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "main.e16e351f.css.map": "/static/css/main.e16e351f.css.map",
-    "main.23b2a473.js.map": "/static/js/main.23b2a473.js.map"
+    "main.2a2cdc52.js.map": "/static/js/main.2a2cdc52.js.map"
   },
   "entrypoints": [
     "static/css/main.e16e351f.css",
-    "static/js/main.23b2a473.js"
+    "static/js/main.2a2cdc52.js"
   ]
 }
