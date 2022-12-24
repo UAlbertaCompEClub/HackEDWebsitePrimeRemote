@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e16e351f.css",
-    "main.js": "/static/js/main.78152860.js",
+    "main.js": "/static/js/main.fbc715b4.js",
     "static/media/ICELogo.png": "/static/media/ICELogo.a9a8b9031ee18d6bed97.png",
     "static/media/HackedLogo.png": "/static/media/HackedLogo.bb2dd67d70e1f254d349.png",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
@@ -40,10 +40,10 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "main.e16e351f.css.map": "/static/css/main.e16e351f.css.map",
-    "main.78152860.js.map": "/static/js/main.78152860.js.map"
+    "main.fbc715b4.js.map": "/static/js/main.fbc715b4.js.map"
   },
   "entrypoints": [
     "static/css/main.e16e351f.css",
-    "static/js/main.78152860.js"
+    "static/js/main.fbc715b4.js"
   ]
 }
