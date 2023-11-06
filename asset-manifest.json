@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1379c4c9.css",
-    "main.js": "/static/js/main.ec348973.js",
+    "main.js": "/static/js/main.6154e2db.js",
     "static/media/ICELogo.png": "/static/media/ICELogo.a9a8b9031ee18d6bed97.png",
     "static/media/background2.jpg": "/static/media/background2.1fb691c175ce01d0a297.jpg",
     "static/media/hacked.png": "/static/media/hacked.7de76ba1b7536eb0dc93.png",
@@ -24,7 +24,6 @@
     "static/media/icons.woff": "/static/media/icons.425399f81e4ce7cbd967.woff",
     "static/media/ECEDepartmentLogo.png": "/static/media/ECEDepartmentLogo.2347dc8a5b321f297a94.png",
     "static/media/ECELogo.png": "/static/media/ECELogo.2347dc8a5b321f297a94.png",
-    "static/media/MecSim.png": "/static/media/MecSim.678d94cad35975ad038f.png",
     "static/media/StartupEdmonton.png": "/static/media/StartupEdmonton.7dd9b0b40cb7d32a44c3.png",
     "static/media/ISAIC.jpg": "/static/media/ISAIC.ac0e0a0e8a2f20d89bb8.jpg",
     "static/media/icons.woff2": "/static/media/icons.38c6d8bab26db77d8c80.woff2",
@@ -35,6 +34,7 @@
     "static/media/Intuit.png": "/static/media/Intuit.0cb317c9e233dfbb9a45.png",
     "static/media/General-Dynamics-logo.png": "/static/media/General-Dynamics-logo.fe3a9b6914381b6ee855.png",
     "static/media/Amii.png": "/static/media/Amii.ca164f9c31949deffde7.png",
+    "static/media/mecSimCalc.png": "/static/media/mecSimCalc.4759c5b95a5b6ae58388.png",
     "static/media/StickerMule.png": "/static/media/StickerMule.d1ad4fc4d53ca6d0a495.png",
     "static/media/BrandMakers.png": "/static/media/BrandMakers.974c57cfe7bce521eeef.png",
     "static/media/HackEDIntuit.svg": "/static/media/HackEDIntuit.d7cf68cfa2c768c29fdf17aeca91aac9.svg",
@@ -43,10 +43,10 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "main.1379c4c9.css.map": "/static/css/main.1379c4c9.css.map",
-    "main.ec348973.js.map": "/static/js/main.ec348973.js.map"
+    "main.6154e2db.js.map": "/static/js/main.6154e2db.js.map"
   },
   "entrypoints": [
     "static/css/main.1379c4c9.css",
-    "static/js/main.ec348973.js"
+    "static/js/main.6154e2db.js"
   ]
 }
