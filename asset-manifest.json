@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1379c4c9.css",
-    "main.js": "/static/js/main.6154e2db.js",
+    "main.js": "/static/js/main.13a20be5.js",
     "static/media/ICELogo.png": "/static/media/ICELogo.a9a8b9031ee18d6bed97.png",
     "static/media/background2.jpg": "/static/media/background2.1fb691c175ce01d0a297.jpg",
     "static/media/hacked.png": "/static/media/hacked.7de76ba1b7536eb0dc93.png",
@@ -24,6 +24,7 @@
     "static/media/icons.woff": "/static/media/icons.425399f81e4ce7cbd967.woff",
     "static/media/ECEDepartmentLogo.png": "/static/media/ECEDepartmentLogo.2347dc8a5b321f297a94.png",
     "static/media/ECELogo.png": "/static/media/ECELogo.2347dc8a5b321f297a94.png",
+    "static/media/UofA.png": "/static/media/UofA.be6128db808f745e162d.png",
     "static/media/StartupEdmonton.png": "/static/media/StartupEdmonton.7dd9b0b40cb7d32a44c3.png",
     "static/media/ISAIC.jpg": "/static/media/ISAIC.ac0e0a0e8a2f20d89bb8.jpg",
     "static/media/icons.woff2": "/static/media/icons.38c6d8bab26db77d8c80.woff2",
@@ -43,10 +44,10 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "main.1379c4c9.css.map": "/static/css/main.1379c4c9.css.map",
-    "main.6154e2db.js.map": "/static/js/main.6154e2db.js.map"
+    "main.13a20be5.js.map": "/static/js/main.13a20be5.js.map"
   },
   "entrypoints": [
     "static/css/main.1379c4c9.css",
-    "static/js/main.6154e2db.js"
+    "static/js/main.13a20be5.js"
   ]
 }
