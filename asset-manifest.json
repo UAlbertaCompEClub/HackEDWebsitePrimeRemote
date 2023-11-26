@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1379c4c9.css",
-    "main.js": "/static/js/main.a609b4e8.js",
+    "main.js": "/static/js/main.2433f27e.js",
     "static/media/ICELogo.png": "/static/media/ICELogo.a9a8b9031ee18d6bed97.png",
     "static/media/background2.jpg": "/static/media/background2.1fb691c175ce01d0a297.jpg",
     "static/media/hacked.png": "/static/media/hacked.7de76ba1b7536eb0dc93.png",
@@ -11,6 +11,7 @@
     "static/media/InnovateEdmonton.png": "/static/media/InnovateEdmonton.4a9c0a90297ad5744bad.png",
     "static/media/Servus.jpg": "/static/media/Servus.87b785a532f7972d63a7.jpg",
     "static/media/DarkhorseAnalytics.png": "/static/media/DarkhorseAnalytics.5db9cbf993176b022ace.png",
+    "static/media/SIC.png": "/static/media/SIC.1898ccd1bb763c4d7314.png",
     "static/media/outline-icons.svg": "/static/media/outline-icons.9c4845b4b41ef40a22fa.svg",
     "static/media/icons.eot": "/static/media/icons.a01e3f2d6c83dc3aee17.eot",
     "static/media/icons.ttf": "/static/media/icons.c656b8caa454ed19b9a2.ttf",
@@ -32,7 +33,9 @@
     "static/media/outline-icons.ttf": "/static/media/outline-icons.5367103510b27b784827.ttf",
     "static/media/OnePassword.png": "/static/media/OnePassword.4546ab8d7aee5c189886.png",
     "static/media/flags.png": "/static/media/flags.99f63ae7a743f21ab308.png",
+    "static/media/lantern.png": "/static/media/lantern.8b11b5a3d8a6096c6d9a.png",
     "static/media/Intuit.png": "/static/media/Intuit.0cb317c9e233dfbb9a45.png",
+    "static/media/telus.png": "/static/media/telus.2d394f0f4c0b80c8d406.png",
     "static/media/General-Dynamics-logo.png": "/static/media/General-Dynamics-logo.fe3a9b6914381b6ee855.png",
     "static/media/Amii.png": "/static/media/Amii.ca164f9c31949deffde7.png",
     "static/media/mecSimCalc.png": "/static/media/mecSimCalc.4759c5b95a5b6ae58388.png",
@@ -44,10 +47,10 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "main.1379c4c9.css.map": "/static/css/main.1379c4c9.css.map",
-    "main.a609b4e8.js.map": "/static/js/main.a609b4e8.js.map"
+    "main.2433f27e.js.map": "/static/js/main.2433f27e.js.map"
   },
   "entrypoints": [
     "static/css/main.1379c4c9.css",
-    "static/js/main.a609b4e8.js"
+    "static/js/main.2433f27e.js"
   ]
 }
