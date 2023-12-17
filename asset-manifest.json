@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1379c4c9.css",
-    "main.js": "/static/js/main.c3a46c8c.js",
+    "main.js": "/static/js/main.30b2ba0c.js",
     "static/media/ICELogo.png": "/static/media/ICELogo.a9a8b9031ee18d6bed97.png",
     "static/media/background2.jpg": "/static/media/background2.1fb691c175ce01d0a297.jpg",
     "static/media/HackEDhorizontalblue.png": "/static/media/HackEDhorizontalblue.85a1073b19b4ff637a87.png",
@@ -47,10 +47,10 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "main.1379c4c9.css.map": "/static/css/main.1379c4c9.css.map",
-    "main.c3a46c8c.js.map": "/static/js/main.c3a46c8c.js.map"
+    "main.30b2ba0c.js.map": "/static/js/main.30b2ba0c.js.map"
   },
   "entrypoints": [
     "static/css/main.1379c4c9.css",
-    "static/js/main.c3a46c8c.js"
+    "static/js/main.30b2ba0c.js"
   ]
 }
