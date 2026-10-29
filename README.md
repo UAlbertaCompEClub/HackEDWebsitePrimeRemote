@@ -4,9 +4,6 @@ One site for both of the Computer Engineering Club's hackathons. It replaces
 `HackEDWebsitePrimeRemote` (hacked.compeclub.com) and `HackEDWebsiteBetaRemote`
 (hackedbeta.compeclub.com).
 
-Static [Astro](https://astro.build) site, one page, no framework JS. The only scripts are
-the hero intro, the FAQ event switch and the mobile menu.
-
 ```bash
 npm install
 npm run dev      # http://localhost:4321
@@ -29,17 +26,3 @@ Almost everything lives in [`src/data/site.ts`](src/data/site.ts):
 | Sponsors | `sponsors` |
 | Discord invite | `contact.discord` (shown everywhere once it's set) |
 
-## Hero
-
-`src/components/Hero.astro` is the neon-sign intro from `hacked-beta-intro/`: a cat fades in
-beside the sign, curls up against it and lights it. It plays once per browser session. Clicking skips
-it; the replay button runs it again. With reduced motion turned on, the sign starts lit.
-
-`public/cat-sprite.png` is a 4x4 sheet of 32px frames. **Its artist and license are not
-confirmed yet. Check them before going live.**
-
-## Deploying
-
-`.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every push to
-`main`. To serve it at hacked.compeclub.com, add `public/CNAME` with that domain and point
-DNS at Pages. Then redirect hackedbeta.compeclub.com here (`/#events` works well).
