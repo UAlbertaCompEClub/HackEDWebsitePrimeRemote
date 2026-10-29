@@ -1,0 +1,175 @@
+---
+import SectionHead from './SectionHead.astro';
+import { events, faq, featured, type EventId } from '../data/site';
+
+const ids = Object.keys(events) as EventId[];
+---
+
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <SectionHead cmd="man hacked" title="FAQ" id="faq-title">
+      <p>Pick an event and the answers switch to match. Still stuck? Email us, a real human answers.</p>
+    </SectionHead>
+
+    <div class="faq" data-event={featured}>
+      <div class="switch" role="group" aria-label="Show answers for">
+        <span class="label">answers for</span>
+        {
+          ids.map((id) => (
+            <button type="button" data-set-event={id} aria-pressed={id === featured ? 'true' : 'false'}>
+              {events[id].name}
+            </button>
+          ))
+        }
+      </div>
+
+      <div class="groups">
+        {
+          faq.map(({ group, items }) => (
+            <div class="group">
+              <h3>
+                <span aria-hidden="true">## </span>
+                {group}
+              </h3>
+              {items.map((item) => (
+                <details>
+                  <summary>{item.q}</summary>
+                  <div class="a">
+                    {item.a ? (
+                      <p>{item.a}</p>
+                    ) : (
+                      ids.map((id) => (
+                        <p data-for={id}>
+                          <span class="for">{events[id].name}:</span> {item[id] ?? item.a}
+                        </p>
+                      ))
+                    )}
+                  </div>
+                </details>
+              ))}
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .switch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+    font-size: 13px;
+  }
+  .label {
+    color: var(--muted);
+    margin-right: 6px;
+  }
+  .switch button {
+    padding: 7px 14px;
+    border: 1px solid var(--line-2);
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+    transition:
+      background 0.15s ease,
+      color 0.15s ease,
+      border-color 0.15s ease;
+  }
+  .switch button:hover {
+    border-color: var(--term);
+    color: var(--ink);
+  }
+  .switch button[aria-pressed='true'] {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--bg);
+    font-weight: 700;
+  }
+
+  .groups {
+    columns: 2 420px;
+    column-gap: clamp(32px, 5vw, 72px);
+  }
+  .group {
+    break-inside: avoid;
+    margin-bottom: 44px;
+  }
+  h3 {
+    margin-bottom: 8px;
+    color: var(--glow2);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  details {
+    border-bottom: 1px solid var(--line);
+  }
+  summary {
+    position: relative;
+    padding: 15px 36px 15px 0;
+    color: var(--ink);
+    font-weight: 500;
+    cursor: pointer;
+    list-style: none;
+    transition: color 0.15s ease;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::after {
+    content: '+';
+    position: absolute;
+    right: 4px;
+    top: 13px;
+    color: var(--term);
+    font-size: 18px;
+    font-weight: 400;
+    transition: transform 0.2s ease;
+  }
+  details[open] summary::after {
+    transform: rotate(45deg);
+  }
+  summary:hover {
+    color: #e6fffd;
+  }
+  .a {
+    padding: 0 0 20px 2ch;
+    border-left: 1px solid var(--glow3);
+    margin-left: 2px;
+  }
+  .a p {
+    max-width: 62ch;
+  }
+  .for {
+    color: var(--mint);
+  }
+
+  /* one event's answers at a time */
+  .faq[data-event='beta'] [data-for='hacked'],
+  .faq[data-event='hacked'] [data-for='beta'] {
+    display: none;
+  }
+</style>
+
+<script>
+  const faq = document.querySelector<HTMLElement>('.faq')!;
+  const buttons = faq.querySelectorAll<HTMLButtonElement>('[data-set-event]');
+
+  function show(id: string) {
+    faq.dataset.event = id;
+    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.setEvent === id)));
+  }
+  buttons.forEach((b) => b.addEventListener('click', () => show(b.dataset.setEvent!)));
+
+  // the "<event> FAQ" links on the event cards pick that event's answers
+  document.querySelectorAll<HTMLAnchorElement>('[data-faq-event]').forEach((a) =>
+    a.addEventListener('click', () => show(a.dataset.faqEvent!)),
+  );
+</script>

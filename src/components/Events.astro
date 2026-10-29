@@ -1,0 +1,212 @@
+---
+import SectionHead from './SectionHead.astro';
+import CatNap from './CatNap.astro';
+import { events, featured, statusLabel } from '../data/site';
+
+// featured event first
+const order = [events[featured], ...Object.values(events).filter((e) => e.id !== featured)];
+---
+
+<section id="events" aria-labelledby="events-title">
+  <div class="wrap">
+    <SectionHead cmd="ls ./events" title="Pick your hackathon" id="events-title">
+      <p>We run two a year. Beta in the fall is for beginners, and HackED in the winter is for everyone.</p>
+    </SectionHead>
+
+    <div class="grid">
+      {
+        order.map((ev) => (
+          <article class:list={['win', { featured: ev.id === featured }]} data-glow>
+            {ev.id === featured && (
+              <span class="perch">
+                <CatNap size={60} />
+              </span>
+            )}
+            <header class="titlebar">
+              <span class="cmd">$ {ev.command}</span>
+              {ev.id === featured && <span class="badge">next up</span>}
+              <span class="month">{ev.month}</span>
+            </header>
+            <div class="body">
+              <h3>{ev.name}</h3>
+              <p class="audience">{ev.audience}</p>
+              <p class="pitch">{ev.pitch}</p>
+              <dl>
+                <div>
+                  <dt>when</dt>
+                  <dd>{ev.when}</dd>
+                </div>
+                <div>
+                  <dt>where</dt>
+                  <dd>{ev.venue.short}</dd>
+                </div>
+                {ev.facts.map(([k, v]) => (
+                  <div>
+                    <dt>{k}</dt>
+                    <dd>{v}</dd>
+                  </div>
+                ))}
+                <div>
+                  <dt>status</dt>
+                  <dd>
+                    <span class={`dot ${ev.status}`} /> {statusLabel[ev.status]}
+                  </dd>
+                </div>
+              </dl>
+              <div class="actions">
+                {ev.status === 'open' && ev.registerUrl ? (
+                  <a class="btn solid" href={ev.registerUrl} target="_blank" rel="noopener">
+                    register for {ev.name} →
+                  </a>
+                ) : (
+                  <span class="btn" aria-disabled="true">
+                    register (soon)
+                  </span>
+                )}
+                <a class="btn ghost" href="#faq" data-faq-event={ev.id}>
+                  {ev.name} FAQ
+                </a>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .grid {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(16px, 2.5vw, 28px);
+  }
+  @media (max-width: 860px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .perch {
+    position: absolute;
+    right: 28px;
+    bottom: 100%;
+    margin-bottom: -5px;
+    z-index: 2;
+  }
+  .win {
+    display: flex;
+    flex-direction: column;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    transition:
+      border-color 0.25s ease,
+      box-shadow 0.25s ease,
+      transform 0.25s ease;
+  }
+  .win:hover {
+    border-color: var(--line-2);
+    transform: translateY(-2px);
+  }
+  .win.featured {
+    border-color: rgb(95 243 238 / 0.45);
+    box-shadow:
+      0 0 0 1px rgb(95 243 238 / 0.08),
+      0 0 50px -10px rgb(23 185 177 / 0.35);
+  }
+
+  .titlebar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 18px;
+    border-bottom: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .cmd {
+    color: var(--term);
+  }
+  .badge {
+    padding: 2px 8px;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    text-shadow: 0 0 8px rgb(255 122 217 / 0.6);
+    box-shadow: 0 0 10px rgb(255 122 217 / 0.25);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .month {
+    margin-left: auto;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: clamp(22px, 3vw, 34px);
+  }
+  h3 {
+    color: var(--ink);
+    font-size: clamp(28px, 3.6vw, 40px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+  .featured h3 {
+    text-shadow: 0 0 22px rgb(95 243 238 / 0.35);
+  }
+  .audience {
+    margin-top: 8px;
+    color: var(--mint);
+    font-size: 14px;
+  }
+  .pitch {
+    margin-top: 16px;
+    max-width: 52ch;
+  }
+
+  dl {
+    margin: 26px 0 0;
+    padding-top: 18px;
+    border-top: 1px dashed var(--line);
+    font-size: 13.5px;
+  }
+  dl div {
+    display: grid;
+    grid-template-columns: 8ch 1fr;
+    gap: 2ch;
+    padding: 5px 0;
+  }
+  dt {
+    color: var(--muted);
+  }
+  dd {
+    color: var(--text);
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 28px;
+  }
+  .btn.ghost {
+    --c: var(--text);
+    border-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--line-2);
+  }
+  .btn.ghost:hover {
+    background: transparent;
+    color: var(--ink);
+    box-shadow: none;
+    text-decoration-color: var(--ink);
+  }
+</style>

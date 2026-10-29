@@ -1,0 +1,120 @@
+---
+// "~/hacked $ cat faq.md" above a large heading; the motif every section opens with.
+// When it scrolls into view the command types itself out and the heading flickers on like the sign.
+interface Props {
+  cmd: string;
+  title: string;
+  id?: string;
+}
+const { cmd, title, id } = Astro.props;
+---
+
+<header class="head">
+  <p class="prompt" aria-hidden="true"><b>~/hacked</b> $ <span class="cmd" data-cmd={cmd}>{cmd}</span><span class="caret">_</span></p>
+  <h2 id={id}>{title}</h2>
+  <slot />
+</header>
+
+<style>
+  .head {
+    margin-bottom: clamp(36px, 6vw, 64px);
+  }
+  .prompt {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+  .cmd {
+    color: var(--text);
+  }
+  .caret {
+    color: var(--term);
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  h2 {
+    color: var(--ink);
+    font-size: clamp(30px, 5.2vw, 56px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+    text-shadow: 0 0 26px rgb(95 243 238 / 0.25);
+  }
+  .head :global(p:not(.prompt)) {
+    margin-top: 18px;
+    max-width: 60ch;
+    color: var(--text);
+  }
+
+  :global(.js) .head:not(.on) h2 {
+    opacity: 0.3;
+    text-shadow: none;
+  }
+  :global(.js) .head.on h2 {
+    animation: flicker-on 0.7s steps(1) both;
+  }
+  @keyframes flicker-on {
+    0% {
+      opacity: 0.3;
+    }
+    12% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 0.3;
+    }
+    34% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.55;
+    }
+    56%,
+    100% {
+      opacity: 1;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :global(.js) .head:not(.on) h2,
+    :global(.js) .head.on h2 {
+      opacity: 1;
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  async function type(el: HTMLElement) {
+    const text = el.dataset.cmd!;
+    for (let i = 1; i <= text.length; i++) {
+      el.textContent = text.slice(0, i);
+      await new Promise((r) => setTimeout(r, 28 + Math.random() * 40));
+    }
+  }
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        io.unobserve(e.target);
+        const head = e.target as HTMLElement;
+        const cmd = head.querySelector<HTMLElement>('.cmd')!;
+        head.classList.add('on');
+        if (!reduce) type(cmd);
+      }
+    },
+    // fire once the top of the header is a fifth of the way up the screen, however tall it is
+    { rootMargin: '0px 0px -20% 0px' },
+  );
+
+  document.querySelectorAll<HTMLElement>('.head').forEach((head) => {
+    if (!reduce) head.querySelector<HTMLElement>('.cmd')!.textContent = '';
+    io.observe(head);
+  });
+</script>

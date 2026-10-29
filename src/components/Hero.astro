@@ -1,0 +1,661 @@
+---
+import { brand, events, featured, statusLabel, tagline } from '../data/site';
+import Ticker from './Ticker.astro';
+
+const ev = events[featured];
+const term = [
+  'C:\\Users\\dev> cd ./HackED',
+  `C:\\Users\\dev\\HackED> npm run ${ev.id === 'beta' ? 'beta' : 'dev'}`,
+  '',
+  '> client@0.1.0 start',
+  '> compe-scripts --open-hackathon-applications start',
+  '',
+  'starting the development server...',
+  'loading hackathon experience........ done',
+  'connecting students, companies, and ideas.... done',
+  '',
+  'Compiled successfully!',
+  '',
+  `Welcome to ${brand.sign} ${ev.sign}!`,
+  '',
+  tagline,
+  '',
+  'You can now view client in the browser.',
+  '',
+  'https://hacked.compeclub.com',
+];
+---
+
+<section class="hero" id="top">
+  <div
+    class="stage"
+    id="stage"
+    data-term={JSON.stringify(term)}
+    data-tagline={tagline}
+  >
+    <div class="bloom"></div>
+    <pre class="term left" aria-hidden="true"></pre>
+    <pre class="term right" aria-hidden="true"></pre>
+
+    <h1 class="sign">
+      <span class="sr-only">{ev.name}: {tagline}</span>
+      <span class="hacked" data-text={brand.sign} aria-hidden="true"></span>
+      <span class="second" aria-hidden="true"><span class="word" data-text={ev.sign}></span><span class="base"></span></span>
+      <span class="tag" aria-hidden="true"><span class="tag-text"></span><span class="caret"></span></span>
+    </h1>
+
+    <div class="cat" aria-hidden="true"><div class="spot"></div><div class="sprite"></div></div>
+
+    <div class="scan"></div>
+    <div class="vig"></div>
+    <button class="replay" type="button" aria-label="Replay the intro">&#8635; replay</button>
+    <a class="compe" href="https://www.compeclub.com/" aria-label="Computer Engineering Club, University of Alberta">
+      <img src="/compe-logo.png" alt="" width="240" height="240" />
+    </a>
+  </div>
+
+  <div class="meta wrap">
+    <p class="next">
+      <span class="prompt">next:</span>{' '}
+      <span class="ink">{ev.name}</span>
+      <span class="sep">/</span>{ev.when}
+      <span class="sep">/</span>{ev.venue.short}
+    </p>
+    <div class="ctas">
+      {
+        ev.status === 'open' && ev.registerUrl ? (
+          <a class="btn solid" href={ev.registerUrl} target="_blank" rel="noopener">
+            register for {ev.name} →
+          </a>
+        ) : (
+          <span class="btn" aria-disabled="true">
+            <span class={`dot ${ev.status}`} /> {statusLabel[ev.status]}
+          </span>
+        )
+      }
+      <a class="btn" href="#events">both events ↓</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100svh;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    padding: 0;
+    background: #000;
+  }
+
+  .stage {
+    --u: min(1cqw, 2.3svh);
+    position: relative;
+    container-type: inline-size;
+    overflow: hidden;
+    min-height: 420px;
+    background: var(--bg);
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  @media (max-width: 700px) {
+    .stage {
+      --u: 1.4cqw;
+      min-height: 0;
+    }
+  }
+
+  /* ---------- atmosphere ---------- */
+  .bloom,
+  .scan,
+  .vig {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .bloom {
+    background: radial-gradient(ellipse 48% 44% at 50% 46%, rgb(60 230 220 / 0.16), transparent 70%);
+    opacity: 0;
+    transition: opacity 1.8s ease;
+  }
+  .scan {
+    background: repeating-linear-gradient(to bottom, rgb(255 255 255 / 0.028) 0 1px, transparent 1px 3px);
+    opacity: 0;
+    transition: opacity 1.2s ease;
+  }
+  .vig {
+    background: radial-gradient(ellipse at center, transparent 55%, rgb(0 0 0 / 0.7));
+  }
+  .lit .bloom,
+  .lit .scan {
+    opacity: 1;
+  }
+
+  /* ---------- terminal side panes ---------- */
+  .term {
+    position: absolute;
+    top: 88px;
+    margin: 0;
+    font: 700 clamp(12px, 1.4cqw, 19px) / 1.35 var(--mono);
+    white-space: pre;
+    color: var(--term);
+    text-shadow:
+      0 0 4px rgb(120 240 225 / 0.55),
+      0 0 14px rgb(95 243 238 / 0.25);
+    opacity: 0.85;
+    pointer-events: none;
+  }
+  .term.left {
+    left: var(--gutter);
+    mask-image: linear-gradient(90deg, #000 24cqw, transparent 44cqw);
+  }
+  .term.right {
+    right: var(--gutter);
+    text-align: right;
+    mask-image: linear-gradient(270deg, #000 24cqw, transparent 44cqw);
+  }
+  @media (max-width: 700px) {
+    .term {
+      display: none;
+    }
+  }
+
+  /* ---------- sign ---------- */
+  .sign {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 56px;
+    font-weight: 800;
+  }
+  .hacked {
+    display: block;
+    font-size: calc(17 * var(--u));
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+  }
+  .second {
+    display: block;
+    font-size: calc(9.6 * var(--u));
+    line-height: 1;
+    margin-left: calc(7.5 * var(--u));
+    margin-top: calc(0.4 * var(--u));
+  }
+  .base {
+    display: inline-block;
+    width: 0;
+    height: 0;
+  }
+  .sign :global(.ch) {
+    display: inline-block;
+    color: var(--dim);
+    -webkit-text-stroke: 1px rgb(150 240 235 / 0.1);
+  }
+  .sign :global(.ch.on) {
+    color: var(--ink);
+    -webkit-text-stroke: 0;
+    text-shadow:
+      0 0 calc(0.25 * var(--u)) rgb(255 255 255 / 0.55),
+      0 0 calc(0.9 * var(--u)) var(--glow1),
+      0 0 calc(2.4 * var(--u)) var(--glow2),
+      0 0 calc(5 * var(--u)) var(--glow3);
+  }
+  .done :global(.ch.on) {
+    animation: hum 6s infinite;
+    animation-delay: var(--d);
+  }
+  @keyframes hum {
+    0%,
+    90%,
+    92%,
+    95%,
+    100% {
+      opacity: 1;
+    }
+    91% {
+      opacity: 0.72;
+    }
+    94% {
+      opacity: 0.86;
+    }
+  }
+
+  .tag {
+    display: block;
+    margin-top: calc(2.4 * var(--u));
+    min-height: 1.3em;
+    font-size: max(13px, calc(2.45 * var(--u)));
+    font-weight: 700;
+    color: var(--mint);
+    text-shadow:
+      0 0 6px rgb(140 255 190 / 0.6),
+      0 0 18px rgb(60 220 150 / 0.35);
+    white-space: pre;
+  }
+  .caret {
+    display: inline-block;
+    width: 0.58em;
+    height: 1.02em;
+    margin-left: 0.08em;
+    background: currentColor;
+    vertical-align: -0.17em;
+    animation: blink 1s steps(1) infinite;
+    visibility: hidden;
+  }
+  .lit .caret {
+    visibility: visible;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* ---------- cat (pixel sprite sheet: 4x4 grid of 32px frames, solid white, faces left) ---------- */
+  .cat {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+  }
+  .sprite {
+    position: absolute;
+    inset: 0;
+    background: url(/cat-sprite.png) 0 0 / 400% 400% no-repeat;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+    transition: filter 1.4s ease;
+  }
+  .lit .sprite {
+    filter: drop-shadow(0 0 6px rgb(95 243 238 / 0.45));
+  }
+  .spot {
+    position: absolute;
+    left: 55%;
+    top: 96%;
+    width: 340%;
+    height: 110%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(ellipse at center, rgb(170 225 235 / 0.12), transparent 62%);
+    transition: opacity 1.6s ease;
+  }
+  .lit .spot {
+    opacity: 0;
+  }
+  .stage :global(.spark) {
+    position: absolute;
+    width: 0.32cqw;
+    height: 0.32cqw;
+    min-width: 3px;
+    min-height: 3px;
+    border-radius: 50%;
+    background: #e8fffe;
+    box-shadow:
+      0 0 8px var(--glow1),
+      0 0 16px var(--glow2);
+    pointer-events: none;
+  }
+
+  .replay {
+    position: absolute;
+    left: var(--gutter);
+    bottom: 18px;
+    padding: 4px 0;
+    background: none;
+    border: 0;
+    font: 700 12px var(--mono);
+    color: var(--term);
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.8s ease;
+  }
+  .done .replay {
+    opacity: 0.4;
+  }
+  .replay:hover,
+  .replay:focus-visible {
+    opacity: 0.9;
+  }
+
+  .compe {
+    position: absolute;
+    right: var(--gutter);
+    bottom: 14px;
+    width: clamp(44px, 5cqw, 72px);
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+  }
+  .compe:hover {
+    opacity: 1;
+  }
+  .compe img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* ---------- below the sign ---------- */
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 32px;
+    padding-block: 22px 28px;
+    border-top: 1px solid var(--line);
+  }
+  .next {
+    font-size: 14px;
+    color: var(--text);
+  }
+  .next .ink {
+    color: var(--ink);
+    font-weight: 700;
+  }
+  .sep {
+    margin-inline: 0.9ch;
+    color: var(--muted);
+  }
+  .ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+</style>
+
+<script>
+  const stage = document.getElementById('stage')!;
+  const cat = stage.querySelector<HTMLElement>('.cat')!;
+  const sprite = cat.querySelector<HTMLElement>('.sprite')!;
+  const word = stage.querySelector<HTMLElement>('.word')!;
+  const secondEl = stage.querySelector<HTMLElement>('.second')!;
+  const base = stage.querySelector<HTMLElement>('.base')!;
+  const tagText = stage.querySelector<HTMLElement>('.tag-text')!;
+  const termL = stage.querySelector<HTMLElement>('.term.left')!;
+  const termR = stage.querySelector<HTMLElement>('.term.right')!;
+  const replay = stage.querySelector<HTMLButtonElement>('.replay')!;
+
+  const TERM: string[] = JSON.parse(stage.dataset.term!);
+  const TAGLINE = stage.dataset.tagline!;
+  const SEEN_KEY = 'hacked-intro-seen';
+
+  // sprite frames as [row, col] in the 4x4 sheet
+  type Frame = [number, number];
+  const POSE: Record<string, Frame> = {
+    stand: [0, 0],
+    lower: [2, 0], // haunches going down
+    sit: [2, 1],
+    crouchAwake: [3, 2],
+    crouchSleepy: [2, 2],
+    lie: [2, 3], // curled up, eyes shut
+    lieBreathe: [3, 3],
+  };
+  const CAT_H = 0.6; // standing cat (ears to paws, 17 sprite px) vs the second line's font size
+
+  // split sign words into per-letter spans
+  for (const el of stage.querySelectorAll<HTMLElement>('[data-text]')) {
+    for (const c of el.dataset.text!) {
+      const s = document.createElement('span');
+      s.className = 'ch';
+      s.textContent = c;
+      s.style.setProperty('--d', (Math.random() * 6).toFixed(2) + 's');
+      el.append(s);
+    }
+  }
+  const secondLetters = [...word.children] as HTMLElement[];
+  const hackedLetters = [...stage.querySelector('.hacked')!.children] as HTMLElement[];
+
+  const pose = ([r, c]: Frame) => (sprite.style.backgroundPosition = `${(c * 100) / 3}% ${(r * 100) / 3}%`);
+
+  // ---------- run control: every replay bumps `run`, stale awaits bail out ----------
+  let run = 0;
+  let playing = false;
+  let anims: Animation[] = [];
+  const CANCEL = Symbol('cancel');
+  const wait = (ms: number, id: number) =>
+    new Promise<void>((res, rej) => setTimeout(() => (id === run ? res() : rej(CANCEL)), ms));
+  const track = (a: Animation) => (anims.push(a), a);
+  const cq = (px: number) => (px / stage.clientWidth) * 100;
+
+  // U = screen px per sprite px. Paws (sprite row 30) sit on the second line's baseline;
+  // its nose (mirrored column 30) meets the first letter.
+  type Geo = { x: number; top: number; hitX: number; hitY: number };
+  let U = 1;
+  let geo: Geo | null = null;
+  function layout() {
+    if (!stage.clientWidth) return null;
+    const s = stage.getBoundingClientRect();
+    const w = word.getBoundingClientRect();
+    const b = base.getBoundingClientRect();
+    const fontPx = parseFloat(getComputedStyle(secondEl).fontSize);
+    U = (fontPx * CAT_H) / 17;
+    cat.style.width = cat.style.height = 32 * U + 'px';
+    const contact = w.left - s.left + fontPx * 0.06;
+    const baseline = b.top - s.top;
+    geo = {
+      x: Math.round(contact - 31.5 * U),
+      top: Math.round(baseline - 31 * U),
+      hitX: cq(contact),
+      hitY: cq(baseline - 8 * U),
+    };
+    cat.style.transform = `translate(${geo.x}px, ${geo.top}px)`;
+    return geo;
+  }
+
+  function reset() {
+    anims.forEach((a) => a.cancel());
+    anims = [];
+    stage.classList.remove('lit', 'done');
+    stage.querySelectorAll('.ch').forEach((c) => c.classList.remove('on'));
+    stage.querySelectorAll('.spark').forEach((n) => n.remove());
+    termL.textContent = termR.textContent = tagText.textContent = '';
+    cat.style.opacity = '0';
+    pose(POSE.stand);
+  }
+
+  // just shows up beside the sign, the way cats do
+  async function appear(id: number) {
+    cat.style.opacity = '1';
+    await wait(500, id);
+  }
+
+  // sits, then curls up; resolves the moment it lies down
+  async function settle(id: number) {
+    for (const [p, ms] of [
+      ['stand', 500],
+      ['lower', 240],
+      ['sit', 1100],
+      ['crouchAwake', 380],
+      ['crouchSleepy', 440],
+    ] as const) {
+      pose(POSE[p]);
+      await wait(ms, id);
+    }
+    pose(POSE.lie);
+  }
+
+  // slow breathing while it dozes, until the next replay
+  async function doze(id: number) {
+    for (;;) {
+      await wait(1600, id);
+      pose(POSE.lieBreathe);
+      await wait(1200, id);
+      pose(POSE.lie);
+    }
+  }
+
+  async function flick(el: HTMLElement, id: number, pattern: number[]) {
+    for (let i = 0; i < pattern.length; i++) {
+      el.classList.toggle('on', i % 2 === 0);
+      await wait(pattern[i], id);
+    }
+    el.classList.add('on');
+  }
+  const randomFlicker = () => [
+    40 + Math.random() * 60,
+    50 + Math.random() * 90,
+    30 + Math.random() * 50,
+    60 + Math.random() * 160,
+  ];
+
+  function sparks(x: number, y: number) {
+    for (let i = 0; i < 16; i++) {
+      const p = document.createElement('div');
+      p.className = 'spark';
+      p.style.left = x + 'cqw';
+      p.style.top = y + 'cqw';
+      stage.append(p);
+      const ang = Math.random() * Math.PI * 2;
+      const dist = 2 + Math.random() * 5;
+      const dx = Math.cos(ang) * dist,
+        dy = Math.sin(ang) * dist - 1.5;
+      const a = track(
+        p.animate(
+          [
+            { transform: 'translate(-50%,-50%) scale(1)', opacity: 1 },
+            { transform: `translate(calc(-50% + ${dx}cqw), calc(-50% + ${dy + 3}cqw)) scale(.3)`, opacity: 0 },
+          ],
+          { duration: 500 + Math.random() * 500, easing: 'cubic-bezier(.2,.7,.4,1)' },
+        ),
+      );
+      a.onfinish = () => p.remove();
+    }
+  }
+
+  async function lightSign(id: number, m: Geo) {
+    track(
+      secondEl.animate(
+        [
+          { transform: 'translateX(0)' },
+          { transform: 'translateX(.45cqw) rotate(.6deg)' },
+          { transform: 'translateX(-.2cqw) rotate(-.3deg)' },
+          { transform: 'translateX(0)' },
+        ],
+        { duration: 360, easing: 'ease-out' },
+      ),
+    );
+    sparks(m.hitX, m.hitY);
+    await flick(secondLetters[0], id, [70, 90, 40, 260]);
+
+    secondLetters.slice(1).forEach((l, i) =>
+      wait(i * 110, id)
+        .then(() => flick(l, id, randomFlicker()))
+        .catch(() => {}),
+    );
+    await wait(520, id);
+
+    // power surges up into the top line
+    const order = hackedLetters
+      .map((l, i) => [l, Math.random() * 0.5 + i] as const)
+      .sort((a, b) => a[1] - b[1]);
+    order.forEach(([l], i) =>
+      wait(i * 85, id)
+        .then(() => flick(l, id, randomFlicker()))
+        .catch(() => {}),
+    );
+    await wait(order.length * 85 + 320, id);
+    stage.classList.add('lit');
+  }
+
+  async function typeLines(pane: HTMLElement, lines: string[], id: number) {
+    for (const line of lines) {
+      const shown = pane.textContent;
+      for (let i = 1; i <= line.length; i += 3) {
+        pane.textContent = shown + line.slice(0, i + 2);
+        await wait(10, id);
+      }
+      pane.textContent = shown + line + '\n';
+      await wait(line ? 70 : 30, id);
+    }
+  }
+
+  async function typeTag(id: number) {
+    for (let i = 1; i <= TAGLINE.length; i++) {
+      tagText.textContent = TAGLINE.slice(0, i);
+      await wait(38 + Math.random() * 40, id);
+    }
+  }
+
+  function finalState() {
+    ++run;
+    playing = false;
+    anims.forEach((a) => a.cancel());
+    anims = [];
+    stage.querySelectorAll('.spark').forEach((n) => n.remove());
+    layout();
+    cat.style.opacity = '1';
+    pose(POSE.lie);
+    stage.classList.add('lit', 'done');
+    stage.querySelectorAll('.ch').forEach((c) => c.classList.add('on'));
+    termL.textContent = termR.textContent = TERM.join('\n');
+    tagText.textContent = TAGLINE;
+    doze(run).catch(() => {});
+  }
+
+  function remember() {
+    try {
+      sessionStorage.setItem(SEEN_KEY, '1');
+    } catch {}
+  }
+  function seen() {
+    try {
+      return sessionStorage.getItem(SEEN_KEY) === '1';
+    } catch {
+      return false;
+    }
+  }
+
+  async function play() {
+    const id = ++run;
+    playing = true;
+    reset();
+    // don't hold the intro hostage to font loading; layout is redone before the cat shows up
+    await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 1200))]);
+    while (!stage.clientWidth) await new Promise((r) => setTimeout(r, 100));
+    if (id !== run) return;
+
+    try {
+      layout();
+      // a dark, dead sign; the cat appears beside it, sits and curls up -- lying down lights it
+      await wait(500, id);
+      const m = layout()!;
+      await appear(id);
+      await settle(id);
+      doze(id).catch(() => {});
+      await lightSign(id, m);
+      remember();
+      await wait(600, id);
+
+      // the dev server boots in the background, tagline types out
+      typeLines(termL, TERM, id).catch(() => {});
+      typeLines(termR, TERM, id).catch(() => {});
+      await wait(400, id);
+      await typeTag(id);
+      stage.classList.add('done');
+      playing = false;
+    } catch (e) {
+      if (e !== CANCEL) throw e;
+    }
+  }
+
+  // a click mid-intro skips to the lit sign; after that, the replay button runs it again
+  stage.addEventListener('click', (e) => {
+    if ((e.target as HTMLElement).closest('a, button')) return;
+    if (!playing) return;
+    remember();
+    finalState();
+  });
+  replay.addEventListener('click', play);
+  addEventListener('resize', () => layout());
+
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || seen()) {
+    document.fonts.ready.then(finalState);
+    finalState();
+  } else {
+    play();
+  }
+</script>

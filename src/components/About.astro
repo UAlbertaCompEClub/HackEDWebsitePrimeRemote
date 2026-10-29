@@ -1,0 +1,246 @@
+---
+import SectionHead from './SectionHead.astro';
+import { events, featured, weekend } from '../data/site';
+
+const ev = events[featured];
+
+// "fri 13 · 10:00am", in Edmonton time no matter where the site is built
+const fmt = (iso: string, approx = false) => {
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'America/Edmonton',
+      weekday: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
+    })
+      .formatToParts(new Date(iso))
+      .map((p) => [p.type, p.value]),
+  );
+  const ampm = parts.dayPeriod.replace(/\W/g, '').toLowerCase();
+  return `${parts.weekday.toLowerCase().replace('.', '')} ${parts.day} · ${approx ? '~' : ''}${parts.hour}:${parts.minute}${ampm}`;
+};
+
+const rows = ev.schedule
+  ? ev.schedule.map((s) => ({ when: fmt(s.at, s.approx), what: s.what, note: s.note, at: s.at }))
+  : weekend.map(([when, what]) => ({ when, what: '', note: what, at: '' }));
+const first = ev.schedule?.[0]?.at ?? '';
+const last = ev.schedule?.at(-1)?.at ?? '';
+---
+
+<section id="about" aria-labelledby="about-title">
+  <div class="wrap split">
+    <SectionHead cmd="cat about.md" title="So what's a hackathon?" id="about-title">
+      <p class="lede">
+        You and up to four friends get 24 hours to build something (an app, a game, a little robot, a website that does
+        one very weird thing). Then you show it off to the judges and maybe win something. Mentors who've done this
+        before hang around the whole time, and so do the snacks.
+      </p>
+      <p>
+        Both events are run by the Computer Engineering Club at the U of A. Never written a line of code? Honestly, that's
+        who Beta is for.
+      </p>
+    </SectionHead>
+
+    <div class="log" data-glow data-start={first} data-end={last}>
+      <p class="logtitle">
+        <span>tail -f {ev.schedule ? `${ev.id}-schedule.log` : 'weekend.log'}</span>
+        <span class="live"><span class="dot"></span> {ev.schedule ? `${ev.name} · ${ev.when}` : 'roughly'}</span>
+      </p>
+      <ol>
+        {
+          rows.map((r, i) => (
+            <li style={`--i:${i}`} data-at={r.at}>
+              <time datetime={r.at || undefined}>[{r.when}]</time>
+              <span>
+                {r.what && <b>{r.what}</b>}
+                {r.what && r.note && <br />}
+                {r.note}
+              </span>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="foot">
+        <span class="countdown">
+          {ev.schedule ? 'all times are Edmonton time (MT)' : 'exact times go up closer to each event'}
+        </span><span class="caret">_</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .split {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: clamp(32px, 5vw, 72px);
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .split {
+      grid-template-columns: 1fr;
+    }
+  }
+  .lede {
+    font-size: clamp(16px, 1.6vw, 18px);
+    line-height: 1.7;
+  }
+
+  .log {
+    border: 1px solid var(--line-2);
+    background: var(--panel);
+    font-size: 14px;
+  }
+  .logtitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px 16px;
+    padding: 11px 18px;
+    border-bottom: 1px solid var(--line);
+    color: var(--term);
+    font-size: 12px;
+  }
+  .live {
+    color: var(--muted);
+  }
+  ol {
+    margin: 0;
+    padding: 14px 18px 4px;
+    list-style: none;
+  }
+  li {
+    display: grid;
+    grid-template-columns: 20ch 1fr;
+    gap: 1.5ch;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  li:last-child {
+    border-bottom: 0;
+  }
+  time {
+    color: var(--mint);
+    font-weight: 700;
+    text-shadow: 0 0 8px rgb(140 255 190 / 0.35);
+    white-space: nowrap;
+  }
+  li span {
+    color: var(--text);
+  }
+  li b {
+    color: var(--ink);
+    font-weight: 700;
+  }
+  /* the next thing on the schedule (set by the script below) */
+  li.next time {
+    color: var(--pink);
+    text-shadow: 0 0 10px rgb(255 122 217 / 0.55);
+  }
+  li.next time::after {
+    content: '▸ up next';
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+  }
+  li.past {
+    opacity: 0.45;
+  }
+  @media (max-width: 520px) {
+    li {
+      grid-template-columns: 1fr;
+      gap: 2px;
+    }
+  }
+  .foot {
+    padding: 10px 18px 14px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .countdown.ticking {
+    color: var(--mint);
+  }
+  .caret {
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* lines print in one by one once the log scrolls into view */
+  :global(.js) li {
+    opacity: 0;
+    transform: translateX(-6px);
+    transition:
+      opacity 0.35s ease,
+      transform 0.35s ease;
+    transition-delay: calc(var(--i) * 140ms);
+  }
+  :global(.js) .log.seen li {
+    opacity: 1;
+    transform: none;
+  }
+  :global(.js) .log.seen li.past {
+    opacity: 0.45;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :global(.js) li {
+      transform: none;
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const log = document.querySelector<HTMLElement>('.log');
+  if (log) {
+    new IntersectionObserver(
+      (entries, obs) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          log.classList.add('seen');
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    ).observe(log);
+
+    // with a real schedule: dim what's done, mark what's next, count down to the start
+    const items = [...log.querySelectorAll<HTMLElement>('li[data-at]')].filter((li) => li.dataset.at);
+    const out = log.querySelector<HTMLElement>('.countdown')!;
+    const start = Date.parse(log.dataset.start || '');
+    const end = Date.parse(log.dataset.end || '');
+
+    function tick() {
+      const now = Date.now();
+      let marked = false;
+      for (const li of items) {
+        const t = Date.parse(li.dataset.at!);
+        li.classList.toggle('past', t < now);
+        li.classList.toggle('next', !marked && t >= now && (marked = true));
+      }
+      if (!start) return;
+      if (now < start) {
+        const s = Math.floor((start - now) / 1000);
+        const d = Math.floor(s / 86400);
+        const h = Math.floor((s % 86400) / 3600);
+        const m = Math.floor((s % 3600) / 60);
+        out.textContent = `opening ceremonies in ${d}d ${String(h).padStart(2, '0')}h ${String(m).padStart(2, '0')}m`;
+        out.classList.add('ticking');
+      } else if (now < end + 3 * 3600_000) {
+        out.textContent = "it's happening right now!";
+        out.classList.add('ticking');
+      } else {
+        out.textContent = "that's a wrap, see you next time";
+        out.classList.remove('ticking');
+      }
+    }
+    if (items.length) {
+      tick();
+      setInterval(tick, 30_000);
+    }
+  }
+</script>

@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import Events from '../components/Events.astro';
+import About from '../components/About.astro';
+import Venue from '../components/Venue.astro';
+import Faq from '../components/Faq.astro';
+import Sponsors from '../components/Sponsors.astro';
+import Footer from '../components/Footer.astro';
+import { tagline } from '../data/site';
+---
+
+<Base
+  title={`HackED + HackED Beta · ${tagline}`}
+  description="HackED and HackED Beta are the University of Alberta Computer Engineering Club's 24-hour hackathons: Beta in November for first-timers, HackED in January for everyone."
+>
+  <Nav />
+  <main>
+    <Hero />
+    <Events />
+    <About />
+    <Venue />
+    <Faq />
+    <Sponsors />
+  </main>
+  <Footer />
+</Base>

@@ -1,0 +1,132 @@
+---
+import SectionHead from './SectionHead.astro';
+import { events, featured, type HackEvent } from '../data/site';
+
+const order = [events[featured], ...Object.values(events).filter((e) => e.id !== featured)];
+
+const mapFor = ({ venue: v }: HackEvent) => {
+  const d = 0.003;
+  const bbox = [v.lng - d * 1.8, v.lat - d, v.lng + d * 1.8, v.lat + d].join('%2C');
+  return `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${v.lat}%2C${v.lng}`;
+};
+const directions = ({ venue: v }: HackEvent) =>
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${v.lat},${v.lng}`)}`;
+---
+
+<section id="venue" aria-labelledby="venue-title">
+  <div class="wrap">
+    <SectionHead cmd="whereis hacked" title="Where to show up" id="venue-title">
+      <p>Both events are in person on the U of A campus. No remote option this year, so come say hi!</p>
+    </SectionHead>
+
+    <div class="places">
+      {
+        order.map((ev) => (
+          <article class="place" data-glow>
+            <figure class="map">
+              <iframe title={`Map of ${ev.venue.name}`} src={mapFor(ev)} loading="lazy" />
+              <figcaption>
+                {ev.venue.lat.toFixed(4)}° N, {Math.abs(ev.venue.lng).toFixed(4)}° W
+              </figcaption>
+            </figure>
+            <div class="info">
+              <p class="tag">{ev.name}</p>
+              <h3>{ev.venue.name}</h3>
+              <p class="addr">{ev.venue.address}</p>
+              <p class="hint">{ev.venue.hint.charAt(0).toUpperCase() + ev.venue.hint.slice(1)}.</p>
+              <a class="btn" href={directions(ev)} target="_blank" rel="noopener">
+                directions →
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .places {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(16px, 2.5vw, 28px);
+  }
+  @media (max-width: 860px) {
+    .places {
+      grid-template-columns: 1fr;
+    }
+  }
+  .place {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+    background: var(--panel);
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 22px 24px 26px;
+  }
+  .tag {
+    color: var(--pink);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgb(255 122 217 / 0.45);
+  }
+  h3 {
+    margin: 8px 0 6px;
+    color: var(--ink);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .addr {
+    color: var(--text);
+    font-size: 14px;
+  }
+  .hint {
+    margin: 10px 0 22px;
+    color: var(--muted);
+    font-size: 13.5px;
+  }
+  .btn {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+
+  .map {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+  }
+  .map::after {
+    /* tint the inverted map toward the sign's cyan */
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(23 185 177 / 0.14);
+    mix-blend-mode: color;
+    pointer-events: none;
+  }
+  iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    filter: invert(0.92) hue-rotate(180deg) grayscale(0.5) contrast(0.95) brightness(0.9);
+  }
+  figcaption {
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+    z-index: 1;
+    padding: 3px 8px;
+    background: rgb(3 6 6 / 0.85);
+    font-size: 11px;
+    color: var(--term);
+  }
+</style>

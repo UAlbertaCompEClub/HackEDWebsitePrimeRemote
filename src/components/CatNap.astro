@@ -1,0 +1,97 @@
+---
+// The hero's cat, napping somewhere else on the page. Click (or tap) to pet it.
+// Uses the same 4x4 sheet of 32px frames as the hero; the box is one frame, and the
+// lying cat's belly sits on the bottom edge of it.
+interface Props {
+  size?: number;
+}
+const { size = 64 } = Astro.props;
+---
+
+<button class="catnap" type="button" style={`--s:${size}px`} aria-label="Pet the cat">
+  <span class="sprite"></span>
+  <span class="say" aria-hidden="true"></span>
+</button>
+
+<style>
+  .catnap {
+    position: relative;
+    display: block;
+    width: var(--s);
+    height: var(--s);
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .sprite {
+    position: absolute;
+    inset: 0;
+    background: url(/cat-sprite.png) 0 0 / 400% 400% no-repeat;
+    image-rendering: pixelated;
+    transform: scaleX(-1);
+    filter: drop-shadow(0 0 5px rgb(95 243 238 / 0.45));
+    animation: breathe 2.8s steps(1) infinite;
+  }
+  /* frames as background-position: col*33.33% row*33.33% */
+  @keyframes breathe {
+    0% {
+      background-position: 100% 66.667%; /* curled up */
+    }
+    57% {
+      background-position: 100% 100%; /* curled up, breathing in */
+    }
+  }
+  .catnap.awake .sprite {
+    animation: none;
+    background-position: 66.667% 100%; /* crouched, eyes open */
+  }
+  .catnap:hover .sprite {
+    filter: drop-shadow(0 0 8px rgb(255 122 217 / 0.7));
+  }
+
+  .say {
+    position: absolute;
+    left: 50%;
+    bottom: 70%;
+    padding: 3px 8px;
+    border: 1px solid var(--pink);
+    background: var(--bg);
+    color: var(--pink);
+    font: 700 11px var(--mono);
+    white-space: nowrap;
+    text-shadow: 0 0 8px rgb(255 122 217 / 0.6);
+    opacity: 0;
+    transform: translate(-50%, 6px);
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+    pointer-events: none;
+  }
+  .catnap.awake .say {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sprite {
+      animation: none;
+      background-position: 100% 66.667%;
+    }
+  }
+</style>
+
+<script>
+  const LINES = ['mrrp', 'prrrr', '♥', 'is it 3am yet?', 'did you push?', 'more snacks pls', '*stretches*', 'meow?'];
+
+  document.querySelectorAll<HTMLButtonElement>('.catnap').forEach((cat) => {
+    const say = cat.querySelector<HTMLElement>('.say')!;
+    let timer = 0;
+    cat.addEventListener('click', () => {
+      say.textContent = LINES[Math.floor(Math.random() * LINES.length)];
+      cat.classList.add('awake');
+      clearTimeout(timer);
+      timer = window.setTimeout(() => cat.classList.remove('awake'), 1800);
+    });
+  });
+</script>

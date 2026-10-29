@@ -1,0 +1,193 @@
+---
+import SectionHead from './SectionHead.astro';
+import { contact, sponsors } from '../data/site';
+
+const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const mail = (subject: string) => `mailto:${contact.email}?subject=${encodeURIComponent(subject)}`;
+
+const ways = [
+  {
+    cmd: 'sponsor',
+    title: 'Sponsor us',
+    body: "Want a room full of students building with your API? Or running into your recruiters at the snack table? Email us and we'll work something out.",
+    href: mail('Sponsoring HackED'),
+  },
+  {
+    cmd: 'mentor',
+    title: 'Mentor a team',
+    body: "Know your way around code (or a soldering iron)? Drop by for a few hours and help teams get unstuck. You don't need to stay all night.",
+    href: mail('Mentoring at HackED'),
+  },
+  {
+    cmd: 'volunteer',
+    title: 'Volunteer',
+    body: "Help out at check-in or the food table. You get the whole hackathon experience without the 3am debugging.",
+    href: mail('Volunteering at HackED'),
+  },
+];
+---
+
+<section id="sponsors" aria-labelledby="sponsors-title">
+  <div class="wrap">
+    <SectionHead cmd="ls ./sponsors --past" title="Past sponsors" id="sponsors-title">
+      <p>
+        Student hackathons run on sponsor money (and a scary amount of coffee). These companies have backed past HackED
+        and HackED Beta events. Thank you!!
+      </p>
+    </SectionHead>
+
+    <ul class="ls">
+      {
+        sponsors.map((s) => (
+          <li>
+            <a href={s.url} target="_blank" rel="noopener">
+              {slug(s.name)}
+              <span class="slash">/</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="involve">
+      <p class="prompt"><b>~/hacked</b> $ ./get-involved --help</p>
+      <h3 class="invh">Not hacking? You can still come.</h3>
+      <div class="ways">
+        {
+          ways.map((w) => (
+            <a class="way" href={w.href} data-glow>
+              <span class="flag">--{w.cmd}</span>
+              <span class="t">{w.title}</span>
+              <span class="b">{w.body}</span>
+              <span class="go">
+                {contact.email} <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ls {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+  }
+  .ls li {
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .ls a {
+    display: block;
+    padding: 22px 20px;
+    color: var(--text);
+    font-size: 14px;
+    text-decoration: none;
+    transition:
+      color 0.15s ease,
+      background 0.15s ease,
+      text-shadow 0.15s ease;
+  }
+  .ls a:hover {
+    background: rgb(95 243 238 / 0.05);
+    color: var(--ink);
+    animation: glitch 0.45s steps(2) 1;
+    text-shadow:
+      0 0 12px rgb(95 243 238 / 0.5),
+      1px 0 0 rgb(255 122 217 / 0.5);
+  }
+  /* a quick chromatic jitter, like a sign tube catching */
+  @keyframes glitch {
+    0% {
+      text-shadow:
+        -2px 0 0 var(--pink),
+        2px 0 0 var(--glow1);
+      transform: translateX(1px);
+    }
+    50% {
+      text-shadow:
+        2px 0 0 var(--pink),
+        -2px 0 0 var(--glow1);
+      transform: translateX(-1px);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ls a:hover {
+      animation: none;
+    }
+  }
+  .slash {
+    color: var(--pink);
+  }
+
+  .involve {
+    margin-top: clamp(64px, 9vw, 110px);
+  }
+  .involve .prompt {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .invh {
+    margin-bottom: 26px;
+    color: var(--ink);
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .ways {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(14px, 2vw, 24px);
+  }
+  @media (max-width: 860px) {
+    .ways {
+      grid-template-columns: 1fr;
+    }
+  }
+  .way {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 26px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    text-decoration: none;
+    transition:
+      border-color 0.2s ease,
+      transform 0.2s ease;
+  }
+  .way:hover {
+    border-color: var(--term);
+    transform: translateY(-2px);
+  }
+  .flag {
+    color: var(--glow2);
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .t {
+    color: var(--ink);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .b {
+    color: var(--text);
+    font-size: 14px;
+  }
+  .go {
+    margin-top: auto;
+    padding-top: 12px;
+    color: var(--term);
+    font-size: 13px;
+    overflow-wrap: anywhere;
+  }
+</style>

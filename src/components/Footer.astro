@@ -1,0 +1,132 @@
+---
+import { contact, events, thanks } from '../data/site';
+import CatNap from './CatNap.astro';
+
+const links = [
+  ['email', `mailto:${contact.email}`, contact.email],
+  ['club', contact.club, 'compeclub.com'],
+  ['instagram', contact.instagram, '@compeclub'],
+  ...(contact.discord ? [['discord', contact.discord, 'join the server']] : []),
+];
+---
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="top">
+      <a class="club" href={contact.club}>
+        <img src="/compe-logo.png" alt="" width="240" height="240" />
+        <span>
+          <b>Computer Engineering Club</b><br />
+          University of Alberta
+        </span>
+      </a>
+
+      <dl class="links">
+        {
+          links.map(([k, href, label]) => (
+            <div>
+              <dt>{k}</dt>
+              <dd>
+                <a href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noopener">
+                  {label}
+                </a>
+              </dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+
+    <div class="bottom">
+      <p>
+        {Object.values(events).map((e) => e.name).join(' and ')} are run by students in the Computer Engineering Club
+        (come say hi, we're on the 5th floor of the Mechanical Engineering Building). {thanks}
+      </p>
+      <div class="exit">
+        <p><span class="prompt">~/hacked $</span> exit<br />[process completed]</p>
+        <CatNap size={52} />
+      </div>
+      <p class="copy">© {new Date().getFullYear()} University of Alberta Computer Engineering Club</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .foot {
+    border-top: 1px solid var(--line);
+    padding-block: clamp(56px, 8vw, 96px) 40px;
+    background: linear-gradient(var(--bg), #000);
+    font-size: 13.5px;
+  }
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .club {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .club img {
+    width: 64px;
+    height: 64px;
+    opacity: 0.9;
+  }
+  .club b {
+    color: var(--ink);
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 8px 48px;
+    margin: 0;
+  }
+  @media (max-width: 560px) {
+    .links {
+      grid-template-columns: 1fr;
+    }
+  }
+  .links div {
+    display: grid;
+    grid-template-columns: 11ch auto;
+    gap: 1ch;
+  }
+  dt {
+    color: var(--muted);
+  }
+  dd {
+    margin: 0;
+  }
+  dd a {
+    color: var(--term);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+  dd a:hover {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .bottom {
+    display: grid;
+    gap: 22px;
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+  }
+  .bottom p:first-child {
+    max-width: 70ch;
+  }
+  .exit {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    color: var(--text);
+  }
+</style>

@@ -1,0 +1,68 @@
+---
+// A slow neon marquee of event facts. The list is doubled so the loop is seamless.
+import { ticker } from '../data/site';
+
+const items = [...ticker, ...ticker];
+---
+
+<div class="ticker" aria-label={ticker.join(', ')}>
+  <ul aria-hidden="true">
+    {
+      items.map((t) => (
+        <li>
+          {t}
+          <span class="star">✦</span>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .ticker {
+    overflow: hidden;
+    border-block: 1px solid var(--line);
+    background: linear-gradient(90deg, rgb(255 122 217 / 0.06), rgb(95 243 238 / 0.06));
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  ul {
+    display: flex;
+    width: max-content;
+    margin: 0;
+    padding: 12px 0;
+    list-style: none;
+    animation: scroll 60s linear infinite;
+  }
+  .ticker:hover ul {
+    animation-play-state: paused;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 2.4ch;
+    padding-right: 2.4ch;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgb(95 243 238 / 0.45);
+  }
+  .star {
+    color: var(--pink);
+    text-shadow: 0 0 10px var(--pink);
+  }
+  @keyframes scroll {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    ul {
+      animation: none;
+      flex-wrap: wrap;
+      width: auto;
+    }
+  }
+</style>

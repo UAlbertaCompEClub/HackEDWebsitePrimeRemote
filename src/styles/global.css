@@ -1,0 +1,221 @@
+@import '@fontsource-variable/jetbrains-mono';
+
+:root {
+  --bg: #030606;
+  --bg-2: #061012;
+  --panel: #071314;
+  --line: rgb(143 233 220 / 0.14);
+  --line-2: rgb(143 233 220 / 0.28);
+  --ink: #b4fffa;
+  --text: #a6c8c3;
+  --muted: #5d7f7a;
+  --term: #8fe9dc;
+  --mint: #c6ffda;
+  --glow1: #5ff3ee;
+  --glow2: #17b9b1;
+  --glow3: #0a8f88;
+  --dim: #0a1314;
+  /* the second tube in the sign shop: used sparingly, for little bits of fun */
+  --pink: #ff7ad9;
+
+  --mono: 'JetBrains Mono Variable', ui-monospace, Consolas, monospace;
+  --gutter: clamp(16px, 4vw, 48px);
+  --max: 1180px;
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  /* faint dot grid, like graph paper under the CRT */
+  background-image: radial-gradient(rgb(143 233 220 / 0.07) 1px, transparent 1.3px);
+  background-size: 28px 28px;
+  color: var(--text);
+  font: 400 15px/1.75 var(--mono);
+  font-feature-settings: 'calt' 0;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--glow2);
+  color: var(--bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--glow1);
+  outline-offset: 3px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* the glow used on the sign, reused (sparingly) for headings and accents */
+.glow {
+  color: var(--ink);
+  text-shadow:
+    0 0 0.08em rgb(255 255 255 / 0.4),
+    0 0 0.35em rgb(95 243 238 / 0.55),
+    0 0 0.9em rgb(23 185 177 / 0.35);
+}
+
+.prompt {
+  color: var(--muted);
+}
+.prompt b {
+  color: var(--term);
+  font-weight: 600;
+}
+
+/* buttons are bracketed shell commands */
+.btn {
+  --c: var(--term);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6ch;
+  padding: 0.7em 1.15em;
+  border: 1px solid var(--c);
+  background: transparent;
+  color: var(--c);
+  font: 600 14px/1 var(--mono);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.btn:hover {
+  background: var(--c);
+  color: var(--bg);
+  box-shadow: 0 0 24px rgb(95 243 238 / 0.35);
+}
+.btn.solid {
+  --c: var(--ink);
+  background: var(--ink);
+  color: var(--bg);
+  box-shadow: 0 0 22px rgb(95 243 238 / 0.3);
+}
+.btn.solid:hover {
+  background: #e6fffd;
+  box-shadow: 0 0 34px rgb(95 243 238 / 0.5);
+}
+.btn[aria-disabled='true'] {
+  --c: var(--muted);
+  cursor: default;
+  box-shadow: none;
+}
+.btn[aria-disabled='true']:hover {
+  background: transparent;
+  color: var(--c);
+}
+
+.dot {
+  display: inline-block;
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 0 0 8px var(--mint);
+  vertical-align: 0.05em;
+}
+.dot.soon {
+  background: #ffd98a;
+  box-shadow: 0 0 8px #ffbf47;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+.dot.closed,
+.dot.over {
+  background: var(--muted);
+  box-shadow: none;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* scanlines over the whole page, barely there */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgb(255 255 255 / 0.018) 0 1px, transparent 1px 3px);
+}
+
+/* a soft light that follows the cursor across cards (position set in Base.astro) */
+[data-glow] {
+  position: relative;
+  isolation: isolate;
+}
+[data-glow]::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 50%), rgb(95 243 238 / 0.11), transparent 65%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+[data-glow]:hover::before {
+  opacity: 1;
+}
+
+section {
+  position: relative;
+  padding-block: clamp(72px, 11vw, 140px);
+}
+section + section {
+  border-top: 1px solid var(--line);
+}
