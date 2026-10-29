@@ -1,0 +1,18 @@
+# Netlify reads this before the settings in its dashboard, so the build works
+# no matter what the site was configured for before (the old site published `build/`).
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Astro needs Node 22.12 or newer
+  NODE_VERSION = "22"
+
+# One site for both events: send the old Beta subdomain to the main one.
+# Only takes effect if hackedbeta.compeclub.com is added to this Netlify site as a domain alias.
+[[redirects]]
+  from = "https://hackedbeta.compeclub.com/*"
+  to = "https://hacked.compeclub.com/"
+  status = 301
+  force = true
